@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6B170AED-8D9C-41BA-ADDE-961227DD7944</string>
+	<string>126EB105-0350-4128-9620-5581587E25B3</string>
 	<key>IDESourceControlProjectName</key>
 	<string>iOSCodersApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>8C575CB3-97B6-410E-ACF2-63C448928F3D</key>
+		<key>B7CB4241-4A8A-41CD-8AD3-1A033F8B2F5A</key>
 		<string>https://github.com/iOSCoders/iOSCodersApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iOSCodersApp.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>8C575CB3-97B6-410E-ACF2-63C448928F3D</key>
+		<key>B7CB4241-4A8A-41CD-8AD3-1A033F8B2F5A</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8C575CB3-97B6-410E-ACF2-63C448928F3D</string>
+	<string>B7CB4241-4A8A-41CD-8AD3-1A033F8B2F5A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8C575CB3-97B6-410E-ACF2-63C448928F3D</string>
+			<string>B7CB4241-4A8A-41CD-8AD3-1A033F8B2F5A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOSCodersApp</string>
 		</dict>
