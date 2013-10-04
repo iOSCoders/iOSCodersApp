@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ ! -z "$(ls -d *.xcodeproj 2>/dev/null)" ]
+then
+	pod init
+sed -i '' "/target/a\\
+pod 'MMDrawerController', '~> 0.4.0'" Podfile
+
+	pod install
+else
+	echo Create .xcodeproj
+fi

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-iOSCodersApp-MMDrawerController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Pods-iOSCodersApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-iOSCodersAppTests-MMDrawerController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-iOSCodersAppTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2C78EF132B794361AB332348</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>33C90C9D176043FAA65FBA8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E4FCE3938DD4304B4709F89</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>809631C3323A40EBA3E47276</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
