@@ -21,7 +21,6 @@
 		3B2927D617FE6A130069748E /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C617FE6A130069748E /* Subject.m */; };
 		3B2927D717FE6A130069748E /* Turtle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C717FE6A130069748E /* Turtle.m */; };
 		3B2927D817FE6A130069748E /* car_top_copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2927C817FE6A130069748E /* car_top_copy.png */; };
-		3B2927D917FE6A130069748E /* cpToSite in Resources */ = {isa = PBXBuildFile; fileRef = 3B2927C917FE6A130069748E /* cpToSite */; };
 		3BF31A2817FE67D900603568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2717FE67D900603568 /* Foundation.framework */; };
 		3BF31A2A17FE67D900603568 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2917FE67D900603568 /* CoreGraphics.framework */; };
 		3BF31A2C17FE67D900603568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2B17FE67D900603568 /* UIKit.framework */; };
@@ -30,7 +29,6 @@
 		3BF31A3817FE67D900603568 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF31A3717FE67D900603568 /* AppDelegate.m */; };
 		3BF31A3B17FE67D900603568 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF31A3917FE67D900603568 /* Main_iPhone.storyboard */; };
 		3BF31A3E17FE67D900603568 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF31A3C17FE67D900603568 /* Main_iPad.storyboard */; };
-		3BF31A4117FE67D900603568 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF31A4017FE67D900603568 /* ViewController.m */; };
 		3BF31A4317FE67D900603568 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF31A4217FE67D900603568 /* Images.xcassets */; };
 		3BF31A4A17FE67D900603568 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A4917FE67D900603568 /* XCTest.framework */; };
 		3BF31A4B17FE67D900603568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2717FE67D900603568 /* Foundation.framework */; };
@@ -76,7 +74,6 @@
 		3B2927C617FE6A130069748E /* Subject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
 		3B2927C717FE6A130069748E /* Turtle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Turtle.m; sourceTree = "<group>"; };
 		3B2927C817FE6A130069748E /* car_top_copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car_top_copy.png; sourceTree = "<group>"; };
-		3B2927C917FE6A130069748E /* cpToSite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = cpToSite; sourceTree = "<group>"; };
 		3BF31A2417FE67D900603568 /* iOSCodersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCodersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF31A2717FE67D900603568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3BF31A2917FE67D900603568 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,8 +86,6 @@
 		3BF31A3717FE67D900603568 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3BF31A3A17FE67D900603568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		3BF31A3D17FE67D900603568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		3BF31A3F17FE67D900603568 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3BF31A4017FE67D900603568 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3BF31A4217FE67D900603568 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3BF31A4817FE67D900603568 /* iOSCodersAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCodersAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF31A4917FE67D900603568 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -128,6 +123,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B36501D17FE73A7001D966B /* WebPages */ = {
+			isa = PBXGroup;
+			children = (
+				3B2927BA17FE6A130069748E /* Style.css */,
+				3B2927BB17FE6A130069748E /* About.html */,
+				3B2927BC17FE6A130069748E /* Logistics.html */,
+				3B2927BD17FE6A130069748E /* Resources.html */,
+				3B2927BE17FE6A130069748E /* Your App Here.html */,
+				3B2927BF17FE6A130069748E /* lib.js */,
+			);
+			name = WebPages;
+			sourceTree = "<group>";
+		};
+		3B36501E17FE7402001D966B /* Mazey2 */ = {
+			isa = PBXGroup;
+			children = (
+				3B2927C817FE6A130069748E /* car_top_copy.png */,
+				3B2927B517FE69E40069748E /* Mazey2ViewController.h */,
+				3B2927C317FE6A130069748E /* Mazey2ViewController.m */,
+				3B2927B617FE69E40069748E /* MyScene4.h */,
+				3B2927C417FE6A130069748E /* MyScene4.m */,
+				3B2927B717FE69E40069748E /* NSObject+Utils.h */,
+				3B2927C517FE6A130069748E /* NSObject+Utils.m */,
+				3B2927B917FE69E40069748E /* Turtle.h */,
+				3B2927C717FE6A130069748E /* Turtle.m */,
+			);
+			name = Mazey2;
+			sourceTree = "<group>";
+		};
 		3BF31A1B17FE67D900603568 = {
 			isa = PBXGroup;
 			children = (
@@ -165,37 +189,19 @@
 		3BF31A2D17FE67D900603568 /* iOSCodersApp */ = {
 			isa = PBXGroup;
 			children = (
-				3B2927BA17FE6A130069748E /* Style.css */,
-				3B2927BB17FE6A130069748E /* About.html */,
-				3B2927BC17FE6A130069748E /* Logistics.html */,
-				3B2927BD17FE6A130069748E /* Resources.html */,
-				3B2927BE17FE6A130069748E /* Your App Here.html */,
-				3B2927BF17FE6A130069748E /* lib.js */,
-				3B2927C017FE6A130069748E /* Apps.m */,
-				3B2927C117FE6A130069748E /* CenterViewController.m */,
-				3B2927C217FE6A130069748E /* LeftViewController.m */,
-				3B2927C317FE6A130069748E /* Mazey2ViewController.m */,
-				3B2927C417FE6A130069748E /* MyScene4.m */,
-				3B2927C517FE6A130069748E /* NSObject+Utils.m */,
-				3B2927C617FE6A130069748E /* Subject.m */,
-				3B2927C717FE6A130069748E /* Turtle.m */,
-				3B2927C817FE6A130069748E /* car_top_copy.png */,
-				3B2927C917FE6A130069748E /* cpToSite */,
-				3B2927B217FE69E40069748E /* Apps.h */,
-				3B2927B317FE69E40069748E /* CenterViewController.h */,
-				3B2927B417FE69E40069748E /* LeftViewController.h */,
-				3B2927B517FE69E40069748E /* Mazey2ViewController.h */,
-				3B2927B617FE69E40069748E /* MyScene4.h */,
-				3B2927B717FE69E40069748E /* NSObject+Utils.h */,
-				3B2927B817FE69E40069748E /* Subject.h */,
-				3B2927B917FE69E40069748E /* Turtle.h */,
 				3BF31A3617FE67D900603568 /* AppDelegate.h */,
 				3BF31A3717FE67D900603568 /* AppDelegate.m */,
-				3BF31A3917FE67D900603568 /* Main_iPhone.storyboard */,
-				3BF31A3C17FE67D900603568 /* Main_iPad.storyboard */,
-				3BF31A3F17FE67D900603568 /* ViewController.h */,
-				3BF31A4017FE67D900603568 /* ViewController.m */,
+				3B2927B317FE69E40069748E /* CenterViewController.h */,
+				3B2927C117FE6A130069748E /* CenterViewController.m */,
+				3B2927B417FE69E40069748E /* LeftViewController.h */,
+				3B2927C217FE6A130069748E /* LeftViewController.m */,
+				3B2927B217FE69E40069748E /* Apps.h */,
+				3B2927C017FE6A130069748E /* Apps.m */,
+				3B2927B817FE69E40069748E /* Subject.h */,
+				3B2927C617FE6A130069748E /* Subject.m */,
 				3BF31A4217FE67D900603568 /* Images.xcassets */,
+				3B36501D17FE73A7001D966B /* WebPages */,
+				3B36501E17FE7402001D966B /* Mazey2 */,
 				3BF31A2E17FE67D900603568 /* Supporting Files */,
 			);
 			path = iOSCodersApp;
@@ -208,6 +214,8 @@
 				3BF31A3017FE67D900603568 /* InfoPlist.strings */,
 				3BF31A3317FE67D900603568 /* main.m */,
 				3BF31A3517FE67D900603568 /* iOSCodersApp-Prefix.pch */,
+				3BF31A3917FE67D900603568 /* Main_iPhone.storyboard */,
+				3BF31A3C17FE67D900603568 /* Main_iPad.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -319,7 +327,6 @@
 				3BF31A3217FE67D900603568 /* InfoPlist.strings in Resources */,
 				3B2927D817FE6A130069748E /* car_top_copy.png in Resources */,
 				3B2927CA17FE6A130069748E /* Style.css in Resources */,
-				3B2927D917FE6A130069748E /* cpToSite in Resources */,
 				3B2927CC17FE6A130069748E /* Logistics.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +413,6 @@
 				3B2927D017FE6A130069748E /* Apps.m in Sources */,
 				3B2927D417FE6A130069748E /* MyScene4.m in Sources */,
 				3B2927D717FE6A130069748E /* Turtle.m in Sources */,
-				3BF31A4117FE67D900603568 /* ViewController.m in Sources */,
 				3B2927D617FE6A130069748E /* Subject.m in Sources */,
 				3BF31A3817FE67D900603568 /* AppDelegate.m in Sources */,
 				3B2927D217FE6A130069748E /* LeftViewController.m in Sources */,

@@ -1,2 +1,0 @@
-#!/bin/sh
-tar cf - *.{css,html}|tar xvf - -C ~/Sites/iOS/iOSCoders
