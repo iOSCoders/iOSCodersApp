@@ -76,8 +76,16 @@
     [self.view addSubview:wv];
 }
 
+- (void)doZoom:(CGFloat)z {
+    NSString *s = [NSString stringWithFormat:@"var pt = 8 + ((16 / 7) * %.2f); document.styleSheets[0].cssRules[0].style.fontSize = pt + 'pt';", z];
+    NSString *rc = [wv stringByEvaluatingJavaScriptFromString:s];
+#ifdef DEBUG
+    NSLog(@"rc: %@", rc);
+#endif
+}
+
 -(void)initZoom {
-    [wv stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"zoom(%.2f)", (isPad ? 2.5 : 1)]];
+    [self doZoom:(isPad ? 2.5 : 1)];
 }
 
 - (void)loadPage:(NSString *)title {
@@ -122,7 +130,7 @@
     printf("%s, scale: %.2f", __func__, sender.scale);
 #endif
     if (sender.state == UIGestureRecognizerStateEnded) {
-        [wv stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"zoom(%.2f);", sender.scale]];
+        [self doZoom:sender.scale];
     }
 }
 

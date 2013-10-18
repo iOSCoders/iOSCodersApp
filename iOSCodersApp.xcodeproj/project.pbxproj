@@ -64,7 +64,6 @@
 		3B2927BC17FE6A130069748E /* Logistics.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Logistics.html; sourceTree = "<group>"; };
 		3B2927BD17FE6A130069748E /* Resources.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Resources.html; sourceTree = "<group>"; };
 		3B2927BE17FE6A130069748E /* Your App Here.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Your App Here.html"; sourceTree = "<group>"; };
-		3B2927BF17FE6A130069748E /* lib.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = lib.js; sourceTree = "<group>"; };
 		3B2927C017FE6A130069748E /* Apps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apps.m; sourceTree = "<group>"; };
 		3B2927C117FE6A130069748E /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		3B2927C217FE6A130069748E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
@@ -131,7 +130,6 @@
 				3B2927BC17FE6A130069748E /* Logistics.html */,
 				3B2927BD17FE6A130069748E /* Resources.html */,
 				3B2927BE17FE6A130069748E /* Your App Here.html */,
-				3B2927BF17FE6A130069748E /* lib.js */,
 			);
 			name = WebPages;
 			sourceTree = "<group>";
