@@ -43,7 +43,7 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor cyanColor];
     [self.window makeKeyAndVisible];
     return YES;
 }

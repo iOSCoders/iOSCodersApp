@@ -18,6 +18,7 @@
     Apps *apps;
     UIWebView *wv;
     BOOL isPad;
+    CGRect landscapeRect, portraitRect;
 }
 
 @end
@@ -29,7 +30,7 @@
     if (self) {
         // Custom initialization
         i = 0;
-        self.view.backgroundColor = [UIColor yellowColor];
+        self.view.backgroundColor = [UIColor cyanColor];
         subject = ((AppDelegate *)[UIApplication sharedApplication].delegate).subject;
         apps = ((AppDelegate *)[UIApplication sharedApplication].delegate).apps;
         [self setPage:SubjectPage];
@@ -73,11 +74,23 @@
     
     wv = [[UIWebView alloc] initWithFrame:self.view.frame];
     wv.delegate = self;
+
     [self.view addSubview:wv];
+    
+    UIDeviceOrientation o = [[UIDevice currentDevice] orientation];
+    if (o == UIInterfaceOrientationLandscapeLeft || o == UIInterfaceOrientationLandscapeLeft) {
+        landscapeRect = [[UIScreen mainScreen] bounds];
+        portraitRect = CGRectMake(landscapeRect.origin.x, landscapeRect.origin.y, landscapeRect.size.height, landscapeRect.size.width);
+        wv.frame = landscapeRect;
+    } else {
+        portraitRect = [[UIScreen mainScreen] bounds];
+        landscapeRect = CGRectMake(portraitRect.origin.x, portraitRect.origin.y, portraitRect.size.height, portraitRect.size.width);
+        wv.frame = portraitRect;
+    }
 }
 
 - (void)doZoom:(CGFloat)z {
-    NSString *s = [NSString stringWithFormat:@"var pt = 8 + ((16 / 7) * %.2f); document.styleSheets[0].cssRules[0].style.fontSize = pt + 'pt';", z];
+    NSString *s = [NSString stringWithFormat:@"var pt = 8 + ((16 / 7) * %.2f); document.styleSheets[0].cssRules[0].style.fontSize = pt.toFixed(2) + 'pt';", z];
     NSString *rc = [wv stringByEvaluatingJavaScriptFromString:s];
 #ifdef DEBUG
     NSLog(@"rc: %@", rc);
@@ -131,6 +144,17 @@
 #endif
     if (sender.state == UIGestureRecognizerStateEnded) {
         [self doZoom:sender.scale];
+    }
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+#ifdef DEBUG
+    printf("%s", __func__);
+#endif
+    if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        wv.frame = landscapeRect;
+    } else {
+        wv.frame = portraitRect;
     }
 }
 
