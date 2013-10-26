@@ -16,7 +16,7 @@
 @interface LeftViewController() {
 //    Subject *subject;
 //    Apps *apps;
-    NSArray *pages;
+    NSArray *pages, *apps;
 }
 
 @end
@@ -33,6 +33,7 @@
         [self setRestorationIdentifier:@"MMExampleLeftSideDrawerController"];
 //        subject = ((AppDelegate *)[UIApplication sharedApplication].delegate).subject;
 //        apps = ((AppDelegate *)[UIApplication sharedApplication].delegate).apps;
+        apps = ((AppDelegate *)[UIApplication sharedApplication].delegate).apps;
         pages = ((AppDelegate *)[UIApplication sharedApplication].delegate).pages;
     }
     return self;
@@ -44,15 +45,21 @@
     [self.tableView setContentInset:UIEdgeInsetsMake(20, self.tableView.contentInset.left, self.tableView.contentInset.bottom, self.tableView.contentInset.right)];}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return pages.count;
+    if (section == 0) {
+        return pages.count;
+    }
+    return apps.count;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Subjects";
+    if (section == 0) {
+        return @"Subjects";
+    }
+    return @"Apps";
 }
 
 
@@ -69,7 +76,11 @@
     }
     
     // Set up the cell.
-    cell.textLabel.text = pages[indexPath.row];
+    if (indexPath.section == 0) {
+        cell.textLabel.text = pages[indexPath.row];
+    } else {
+        cell.textLabel.text = apps[indexPath.row];
+    }
     cell.backgroundColor = self.view.backgroundColor;
     
     return cell;
@@ -79,7 +90,11 @@
     MMDrawerController *pvc = (MMDrawerController *)self.parentViewController;
     [pvc closeDrawerAnimated:YES completion:^(BOOL finished) {
         printf("closed.\n");
-        [self.cvc setPage:pages[indexPath.row]];
+        if (indexPath.section == 0) {
+            [self.cvc setPage:pages[indexPath.row]];
+        } else {
+            [self.cvc runApp:apps[indexPath.row]];
+        }
     }];
 }
 

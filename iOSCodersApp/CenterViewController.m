@@ -42,7 +42,15 @@
 }
 
 - (void)setPage:(NSString *)p {
-        [self loadPage:p];
+    [self loadPage:p];
+}
+
+- (void)runApp:(NSString *)app {
+    if ([app isEqualToString:@"Mazey2"]) {
+        Mazey2ViewController *vc = [[Mazey2ViewController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
+        [self presentViewController:navigationController animated:YES completion:^{}];
+    }
 }
 
 - (void)viewDidLoad {

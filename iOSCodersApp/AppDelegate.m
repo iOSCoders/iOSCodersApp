@@ -73,6 +73,7 @@
 - (void)loadIndex {
     curElement = @"";
     self.pages = [NSMutableArray array];
+    self.apps = [NSMutableArray array];
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"xml"];
     NSXMLParser *p = [[NSXMLParser alloc] initWithContentsOfURL:url];
     p.delegate = self;
@@ -90,6 +91,9 @@
     if ([curElement isEqualToString:@"item"]) {
         NSLog(@"%@: %@\n", curElement, string);
         [self.pages addObject:string];
+    } else if ([curElement isEqualToString:@"app"]) {
+        NSLog(@"%@: %@\n", curElement, string);
+        [self.apps addObject:string];
     }
 }
 

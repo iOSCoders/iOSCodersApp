@@ -17,6 +17,6 @@
 @property MMDrawerController *drawerController;
 //@property (strong, nonatomic) Subject *subject;
 //@property (strong, nonatomic) Apps *apps;
-@property (strong, nonatomic) NSMutableArray *pages;
+@property (strong, nonatomic) NSMutableArray *pages, *apps;
 
 @end

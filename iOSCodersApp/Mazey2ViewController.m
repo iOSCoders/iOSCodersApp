@@ -9,6 +9,8 @@
 #import "Mazey2ViewController.h"
 #import "MyScene4.h"
 
+#define MAZEY2 9999
+
 @implementation Mazey2ViewController
 
 - (void)viewDidLoad
@@ -22,6 +24,7 @@
     
     // Configure the view.
     SKView *skView = [[SKView alloc] initWithFrame:self.view.frame];
+    skView.tag = MAZEY2;
     [self.view addSubview:skView];
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
@@ -40,6 +43,8 @@
     [s.scene removeAllChildren];
     s.paused = YES;
     s = nil;
+    SKView *v = (SKView *)[self.view viewWithTag:MAZEY2];
+    [v removeFromSuperview];
     [self performSelector:@selector(adios) withObject:self afterDelay:1];
 }
 
