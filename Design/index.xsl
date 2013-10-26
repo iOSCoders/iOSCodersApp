@@ -11,7 +11,7 @@
         </title>
         <meta http-equiv="cache-control" content="no-cache" />
         <!-- <meta http-equiv="refresh" content="-1"/> -->
-        <link rel="stylesheet" href="lib/style.css" type="text/css" />
+        <link rel="stylesheet" href="lib/xslstyle.css" type="text/css" />
       </head>
       <!-- <script src="lib/jquery.min.js"/> -->
       <body>

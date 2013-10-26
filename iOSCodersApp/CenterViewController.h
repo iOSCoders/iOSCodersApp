@@ -13,6 +13,6 @@ typedef enum {SubjectPage, AppPage} ThePage;
 
 @interface CenterViewController : UIViewController <UIWebViewDelegate>
 
-- (void)setPage:(ThePage)p;
+- (void)setPage:(NSString *)p;
 
 @end

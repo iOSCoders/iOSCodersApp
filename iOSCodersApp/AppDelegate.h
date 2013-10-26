@@ -11,11 +11,12 @@
 #import "Subject.h"
 #import "Apps.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, NSXMLParserDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property MMDrawerController *drawerController;
-@property (strong, nonatomic) Subject *subject;
-@property (strong, nonatomic) Apps *apps;
+//@property (strong, nonatomic) Subject *subject;
+//@property (strong, nonatomic) Apps *apps;
+@property (strong, nonatomic) NSMutableArray *pages;
 
 @end

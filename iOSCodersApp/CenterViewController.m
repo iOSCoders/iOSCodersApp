@@ -16,6 +16,7 @@
     NSInteger i;
     Subject *subject;
     Apps *apps;
+    NSMutableArray *pages;
     UIWebView *wv;
     BOOL isPad;
     CGRect landscapeRect, portraitRect;
@@ -31,9 +32,8 @@
         // Custom initialization
         i = 0;
         self.view.backgroundColor = [UIColor cyanColor];
-        subject = ((AppDelegate *)[UIApplication sharedApplication].delegate).subject;
-        apps = ((AppDelegate *)[UIApplication sharedApplication].delegate).apps;
-        [self setPage:SubjectPage];
+        pages = ((AppDelegate *)[UIApplication sharedApplication].delegate).pages;
+        [self setPage:pages[0]];
         [self setRestorationIdentifier:@"MMExampleCenterControllerRestorationKey"];
         CGFloat w = [[UIScreen mainScreen] bounds].size.width;
         isPad = (w > 320);
@@ -41,16 +41,8 @@
     return self;
 }
 
-- (void)setPage:(ThePage)p {
-    if (p == SubjectPage) {
-        [self loadPage:subject.subject];
-    } else {
-        if (apps.curApp == Mazey2) {
-            Mazey2ViewController *vc = [[Mazey2ViewController alloc] init];
-            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
-            [self presentViewController:navigationController animated:YES completion:^{}];
-        }
-    }
+- (void)setPage:(NSString *)p {
+        [self loadPage:p];
 }
 
 - (void)viewDidLoad {
@@ -103,7 +95,7 @@
 
 - (void)loadPage:(NSString *)title {
     self.navigationItem.title = title;
-    NSURL *url = [[NSBundle mainBundle] URLForResource:subject.subject withExtension:@"html"];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:title withExtension:@"xml"];
     [wv loadRequest:[NSURLRequest requestWithURL:url]];
 }
 

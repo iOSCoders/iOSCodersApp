@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="page.xsl"?>
 <root>
   <title>Your App Here</title>
-  <subject name="Embededed Apps" collapsed="false">
+  <subject name="Embedded Apps" collapsed="false">
     <node name="">
       <content>This app has a space for &quot;applets&quot;, basically an icon that will run an app inside itself.
         It&apos;s a good place for you to showcase your work or help others with theirs.

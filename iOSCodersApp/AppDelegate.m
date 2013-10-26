@@ -12,13 +12,19 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+@interface AppDelegate() {
+    NSString *curElement;
+}
+@end
+
 @implementation AppDelegate
 
 @synthesize drawerController;
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.subject = [Subject theSubject];
-    self.apps = [Apps theApps];
+//    self.subject = [Subject theSubject];
+//    self.apps = [Apps theApps];
+    [self loadIndex];
     CenterViewController *center = [[CenterViewController alloc] init];
     LeftViewController *left = [[LeftViewController alloc] init];
     left.cvc = center;
@@ -61,6 +67,34 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
+}
+
+#pragma mark XML Handlers
+- (void)loadIndex {
+    curElement = @"";
+    self.pages = [NSMutableArray array];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"index" withExtension:@"xml"];
+    NSXMLParser *p = [[NSXMLParser alloc] initWithContentsOfURL:url];
+    p.delegate = self;
+    if (![p parse]) {
+        NSLog(@"%s, parsing %@ failed", __func__, url.path);
+        abort();
+    }
+}
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
+    curElement = elementName;
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
+    if ([curElement isEqualToString:@"item"]) {
+        NSLog(@"%@: %@\n", curElement, string);
+        [self.pages addObject:string];
+    }
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
+    curElement = @"";
 }
 
 @end

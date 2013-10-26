@@ -100,7 +100,7 @@
 }
 
 - (void)makeScore {
-    score = [self makeLabelAt:CGPointMake(m.x, m.y - 10) text:[NSString stringWithFormat:@"%d", points]];
+    score = [self makeLabelAt:CGPointMake(m.x, m.y - 10) text:[NSString stringWithFormat:@"%ld", (long)points]];
     [self addChild:score];
 }
 
@@ -117,7 +117,7 @@
 
 - (void)makeACornerAt:(CGPoint)p ofSize:(CGFloat)sz withRadius:(CGFloat)r id:(NSInteger)id {
     corner = [self makeBallAt:p ofRadius:sz dynamic:FIXED];
-    corner.name = [NSString stringWithFormat:@"corner %d", id];
+    corner.name = [NSString stringWithFormat:@"corner %ld", (long)id];
     corner.fillColor = corner.strokeColor = [SKColor whiteColor];
     corner.physicsBody.categoryBitMask = 1;
     corner.physicsBody.collisionBitMask = 0;
@@ -202,8 +202,8 @@
 
 - (void)updateScoreBy:(NSInteger)n {
     points += n;
-    score.text = [NSString stringWithFormat:@"%d", points];
-    NSLog(@"%d", points);
+    score.text = [NSString stringWithFormat:@"%ld", (long)points];
+    NSLog(@"%ld", (long)points);
 }
 
 @end

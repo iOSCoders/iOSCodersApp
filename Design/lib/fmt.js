@@ -1,8 +1,6 @@
-var collapsed = false;
-$('body').prepend('<hr>');
-$('body').prepend('<button name="y">*</div>');
-//$('body').prepend('<button name="z">+/-</div>');
+var collapsed = true;
 $('body').append('<p/><hr>');
+$('body').append('<button name="y">*</div>');
 
 $('[name=z]').css('cursor', 'hand').click(function(){$('.heading').click()});
 $('[name=y]').css('cursor', 'hand').click(function(){collapseAll()});

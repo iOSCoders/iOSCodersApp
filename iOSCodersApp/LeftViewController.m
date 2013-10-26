@@ -14,8 +14,9 @@
 #import "AppDelegate.h"
 
 @interface LeftViewController() {
-    Subject *subject;
-    Apps *apps;
+//    Subject *subject;
+//    Apps *apps;
+    NSArray *pages;
 }
 
 @end
@@ -30,8 +31,9 @@
         self.view.backgroundColor = [UIColor cyanColor];
         self.title = @"Blue View";
         [self setRestorationIdentifier:@"MMExampleLeftSideDrawerController"];
-        subject = ((AppDelegate *)[UIApplication sharedApplication].delegate).subject;
-        apps = ((AppDelegate *)[UIApplication sharedApplication].delegate).apps;
+//        subject = ((AppDelegate *)[UIApplication sharedApplication].delegate).subject;
+//        apps = ((AppDelegate *)[UIApplication sharedApplication].delegate).apps;
+        pages = ((AppDelegate *)[UIApplication sharedApplication].delegate).pages;
     }
     return self;
 }
@@ -42,20 +44,15 @@
     [self.tableView setContentInset:UIEdgeInsetsMake(20, self.tableView.contentInset.left, self.tableView.contentInset.bottom, self.tableView.contentInset.right)];}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section == 0)
-        return subject.list.count;
-    return apps.list.count;
+    return pages.count;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (section == 0) {
-        return @"Subjects";
-    }
-    return @"Applets";
+    return @"Subjects";
 }
 
 
@@ -72,26 +69,17 @@
     }
     
     // Set up the cell.
-    if (indexPath.section == 0) {
-        cell.textLabel.text = subject.list[indexPath.row];
-    } else {
-        cell.textLabel.text = apps.list[indexPath.row];
-    }
+    cell.textLabel.text = pages[indexPath.row];
     cell.backgroundColor = self.view.backgroundColor;
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    subject.curSubject = indexPath.row;
     MMDrawerController *pvc = (MMDrawerController *)self.parentViewController;
     [pvc closeDrawerAnimated:YES completion:^(BOOL finished) {
         printf("closed.\n");
-        if (indexPath.section == 0) {
-            [self.cvc setPage:SubjectPage];
-        } else {
-            [self.cvc setPage:AppPage];
-        }
+        [self.cvc setPage:pages[indexPath.row]];
     }];
 }
 
