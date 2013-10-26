@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="page.xsl"?>
+<root>
+  <title>Resources</title>
+  <subject name="Meetings" collapsed="false">
+    <node name="">
+      <content>
+       Resources are currently on the
+        <site/>
+        site.
+      </content>
+    </node>
+  </subject>
+</root>
