@@ -14,5 +14,6 @@
 @property (strong, nonatomic) UIWindow *window;
 @property MMDrawerController *drawerController;
 @property (strong, nonatomic) NSMutableArray *pages, *apps;
+@property (strong, nonatomic) NSString *webPages;
 
 @end

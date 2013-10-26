@@ -16,14 +16,16 @@
 		3B3553C0181BE02000B52C2C /* MyScene4.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3553B9181BE02000B52C2C /* MyScene4.m */; };
 		3B3553C1181BE02000B52C2C /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3553BB181BE02000B52C2C /* NSObject+Utils.m */; };
 		3B3553C2181BE02000B52C2C /* Turtle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3553BD181BE02000B52C2C /* Turtle.m */; };
-		3B3553CE181BE21E00B52C2C /* About.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553C4181BE21E00B52C2C /* About.xml */; };
-		3B3553D0181BE21E00B52C2C /* index.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553C6181BE21E00B52C2C /* index.xml */; };
-		3B3553D1181BE21E00B52C2C /* index.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553C7181BE21E00B52C2C /* index.xsl */; };
-		3B3553D3181BE21E00B52C2C /* Logistics.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553C9181BE21E00B52C2C /* Logistics.xml */; };
-		3B3553D4181BE21E00B52C2C /* page.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553CA181BE21E00B52C2C /* page.xsl */; };
-		3B3553D5181BE21E00B52C2C /* Resources.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553CB181BE21E00B52C2C /* Resources.xml */; };
-		3B3553D6181BE21E00B52C2C /* xslstyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553CC181BE21E00B52C2C /* xslstyle.css */; };
-		3B3553D7181BE21E00B52C2C /* Your App Here.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553CD181BE21E00B52C2C /* Your App Here.xml */; };
+		3B4B40D8181BF98D00EC2D9B /* About.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B3553C4181BE21E00B52C2C /* About.xml */; };
+		3B4B40D9181BF98D00EC2D9B /* fmt.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B3553C5181BE21E00B52C2C /* fmt.js */; };
+		3B4B40DA181BF98D00EC2D9B /* index.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B3553C6181BE21E00B52C2C /* index.xml */; };
+		3B4B40DB181BF98D00EC2D9B /* index.xsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B3553C7181BE21E00B52C2C /* index.xsl */; };
+		3B4B40DC181BF98D00EC2D9B /* jquery.min.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B3553C8181BE21E00B52C2C /* jquery.min.js */; };
+		3B4B40DD181BF98D00EC2D9B /* Logistics.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B3553C9181BE21E00B52C2C /* Logistics.xml */; };
+		3B4B40DE181BF98D00EC2D9B /* page.xsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B3553CA181BE21E00B52C2C /* page.xsl */; };
+		3B4B40DF181BF98D00EC2D9B /* Resources.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B3553CB181BE21E00B52C2C /* Resources.xml */; };
+		3B4B40E0181BF98D00EC2D9B /* xslstyle.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B3553CC181BE21E00B52C2C /* xslstyle.css */; };
+		3B4B40E1181BF98D00EC2D9B /* Your App Here.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B3553CD181BE21E00B52C2C /* Your App Here.xml */; };
 		3BF31A2817FE67D900603568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2717FE67D900603568 /* Foundation.framework */; };
 		3BF31A2A17FE67D900603568 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2917FE67D900603568 /* CoreGraphics.framework */; };
 		3BF31A2C17FE67D900603568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2B17FE67D900603568 /* UIKit.framework */; };
@@ -48,6 +50,28 @@
 			remoteInfo = iOSCodersApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B4B40D7181BF91300EC2D9B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = WebPages;
+			dstSubfolderSpec = 7;
+			files = (
+				3B4B40D8181BF98D00EC2D9B /* About.xml in CopyFiles */,
+				3B4B40D9181BF98D00EC2D9B /* fmt.js in CopyFiles */,
+				3B4B40DA181BF98D00EC2D9B /* index.xml in CopyFiles */,
+				3B4B40DB181BF98D00EC2D9B /* index.xsl in CopyFiles */,
+				3B4B40DC181BF98D00EC2D9B /* jquery.min.js in CopyFiles */,
+				3B4B40DD181BF98D00EC2D9B /* Logistics.xml in CopyFiles */,
+				3B4B40DE181BF98D00EC2D9B /* page.xsl in CopyFiles */,
+				3B4B40DF181BF98D00EC2D9B /* Resources.xml in CopyFiles */,
+				3B4B40E0181BF98D00EC2D9B /* xslstyle.css in CopyFiles */,
+				3B4B40E1181BF98D00EC2D9B /* Your App Here.xml in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2AA2AC7808474038A921D7F3 /* libPods-iOSCodersApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSCodersApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +281,7 @@
 				3BF31A2117FE67D900603568 /* Frameworks */,
 				3BF31A2217FE67D900603568 /* Resources */,
 				05364BCC3480468FA2230A77 /* Copy Pods Resources */,
+				3B4B40D7181BF91300EC2D9B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -325,19 +350,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B3553D4181BE21E00B52C2C /* page.xsl in Resources */,
-				3B3553D0181BE21E00B52C2C /* index.xml in Resources */,
 				3B2EE66B181B72C5003E6263 /* Main_iPad.storyboard in Resources */,
 				3B2EE66A181B72A2003E6263 /* Main_iPhone.storyboard in Resources */,
 				3BF31A4317FE67D900603568 /* Images.xcassets in Resources */,
-				3B3553CE181BE21E00B52C2C /* About.xml in Resources */,
-				3B3553D3181BE21E00B52C2C /* Logistics.xml in Resources */,
 				3BF31A3217FE67D900603568 /* InfoPlist.strings in Resources */,
-				3B3553D1181BE21E00B52C2C /* index.xsl in Resources */,
 				3B3553BE181BE02000B52C2C /* car_top_copy.png in Resources */,
-				3B3553D7181BE21E00B52C2C /* Your App Here.xml in Resources */,
-				3B3553D5181BE21E00B52C2C /* Resources.xml in Resources */,
-				3B3553D6181BE21E00B52C2C /* xslstyle.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

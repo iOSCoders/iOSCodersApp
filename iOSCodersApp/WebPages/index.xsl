@@ -10,12 +10,10 @@
           </xsl:for-each>
         </title>
         <meta http-equiv="cache-control" content="no-cache" />
-        <!-- <meta http-equiv="refresh" content="-1"/> -->
         <link rel="stylesheet" href="xslstyle.css" type="text/css" />
       </head>
-      <!-- <script src="jquery.min.js"/> -->
       <body>
-        <xsl:for-each select="root/item">
+        <xsl:for-each select="root/item|root/download">
           <p>
             <xsl:element name="a">
               <xsl:attribute name="href"><xsl:value-of select="."/>.xml</xsl:attribute>
@@ -25,8 +23,5 @@
         </xsl:for-each>
       </body>
     </html>
-  </xsl:template>
-  <xsl:template match="site">
-    <a href="http://www.meetup.com/IOS-Coders/">iOS Coders Meet Up</a>
   </xsl:template>
 </xsl:stylesheet>

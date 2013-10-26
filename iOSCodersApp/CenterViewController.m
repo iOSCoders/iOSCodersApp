@@ -15,6 +15,7 @@
 @interface CenterViewController() {
     NSInteger i;
     NSMutableArray *pages;
+    NSString *webPages;
     UIWebView *wv;
     BOOL isPad;
     CGRect landscapeRect, portraitRect;
@@ -31,6 +32,7 @@
         i = 0;
         self.view.backgroundColor = [UIColor cyanColor];
         pages = ((AppDelegate *)[UIApplication sharedApplication].delegate).pages;
+        webPages = ((AppDelegate *)[UIApplication sharedApplication].delegate).webPages;
         [self setPage:pages[0]];
         [self setRestorationIdentifier:@"MMExampleCenterControllerRestorationKey"];
         CGFloat w = [[UIScreen mainScreen] bounds].size.width;
@@ -101,7 +103,7 @@
 
 - (void)loadPage:(NSString *)title {
     self.navigationItem.title = title;
-    NSURL *url = [[NSBundle mainBundle] URLForResource:title withExtension:@"xml"];
+    NSURL *url = [NSURL fileURLWithPath:[[webPages stringByAppendingPathComponent:title] stringByAppendingPathExtension:@"xml"]];
     [wv loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
