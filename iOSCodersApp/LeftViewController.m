@@ -9,13 +9,9 @@
 #import <MMDrawerController.h>
 #import "CenterViewController.h"
 #import "LeftViewController.h"
-#import "Subject.h"
-#import "Apps.h"
 #import "AppDelegate.h"
 
 @interface LeftViewController() {
-//    Subject *subject;
-//    Apps *apps;
     NSArray *pages, *apps;
 }
 
@@ -31,8 +27,6 @@
         self.view.backgroundColor = [UIColor cyanColor];
         self.title = @"Blue View";
         [self setRestorationIdentifier:@"MMExampleLeftSideDrawerController"];
-//        subject = ((AppDelegate *)[UIApplication sharedApplication].delegate).subject;
-//        apps = ((AppDelegate *)[UIApplication sharedApplication].delegate).apps;
         apps = ((AppDelegate *)[UIApplication sharedApplication].delegate).apps;
         pages = ((AppDelegate *)[UIApplication sharedApplication].delegate).pages;
     }

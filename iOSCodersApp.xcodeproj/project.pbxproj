@@ -7,27 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B2927D017FE6A130069748E /* Apps.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C017FE6A130069748E /* Apps.m */; };
 		3B2927D117FE6A130069748E /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C117FE6A130069748E /* CenterViewController.m */; };
 		3B2927D217FE6A130069748E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C217FE6A130069748E /* LeftViewController.m */; };
-		3B2927D317FE6A130069748E /* Mazey2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C317FE6A130069748E /* Mazey2ViewController.m */; };
-		3B2927D417FE6A130069748E /* MyScene4.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C417FE6A130069748E /* MyScene4.m */; };
-		3B2927D517FE6A130069748E /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C517FE6A130069748E /* NSObject+Utils.m */; };
-		3B2927D617FE6A130069748E /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C617FE6A130069748E /* Subject.m */; };
-		3B2927D717FE6A130069748E /* Turtle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C717FE6A130069748E /* Turtle.m */; };
-		3B2927D817FE6A130069748E /* car_top_copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2927C817FE6A130069748E /* car_top_copy.png */; };
-		3B2EE65E181B7090003E6263 /* About.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EE653181B7090003E6263 /* About.xml */; };
-		3B2EE65F181B7090003E6263 /* index.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EE654181B7090003E6263 /* index.xml */; };
-		3B2EE660181B7090003E6263 /* index.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EE655181B7090003E6263 /* index.xsl */; };
-		3B2EE663181B7090003E6263 /* xslstyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EE659181B7090003E6263 /* xslstyle.css */; };
-		3B2EE664181B7090003E6263 /* Logistics.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EE65A181B7090003E6263 /* Logistics.xml */; };
-		3B2EE665181B7090003E6263 /* page.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EE65B181B7090003E6263 /* page.xsl */; };
-		3B2EE666181B7090003E6263 /* Resources.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EE65C181B7090003E6263 /* Resources.xml */; };
-		3B2EE667181B7090003E6263 /* Your App Here.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EE65D181B7090003E6263 /* Your App Here.xml */; };
-		3B2EE668181B70A9003E6263 /* fmt.js in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EE657181B7090003E6263 /* fmt.js */; };
-		3B2EE669181B70AE003E6263 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 3B2EE658181B7090003E6263 /* jquery.min.js */; };
 		3B2EE66A181B72A2003E6263 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF31A3917FE67D900603568 /* Main_iPhone.storyboard */; };
 		3B2EE66B181B72C5003E6263 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF31A3C17FE67D900603568 /* Main_iPad.storyboard */; };
+		3B3553BE181BE02000B52C2C /* car_top_copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553B5181BE02000B52C2C /* car_top_copy.png */; };
+		3B3553BF181BE02000B52C2C /* Mazey2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3553B7181BE02000B52C2C /* Mazey2ViewController.m */; };
+		3B3553C0181BE02000B52C2C /* MyScene4.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3553B9181BE02000B52C2C /* MyScene4.m */; };
+		3B3553C1181BE02000B52C2C /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3553BB181BE02000B52C2C /* NSObject+Utils.m */; };
+		3B3553C2181BE02000B52C2C /* Turtle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3553BD181BE02000B52C2C /* Turtle.m */; };
+		3B3553CE181BE21E00B52C2C /* About.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553C4181BE21E00B52C2C /* About.xml */; };
+		3B3553D0181BE21E00B52C2C /* index.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553C6181BE21E00B52C2C /* index.xml */; };
+		3B3553D1181BE21E00B52C2C /* index.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553C7181BE21E00B52C2C /* index.xsl */; };
+		3B3553D3181BE21E00B52C2C /* Logistics.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553C9181BE21E00B52C2C /* Logistics.xml */; };
+		3B3553D4181BE21E00B52C2C /* page.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553CA181BE21E00B52C2C /* page.xsl */; };
+		3B3553D5181BE21E00B52C2C /* Resources.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553CB181BE21E00B52C2C /* Resources.xml */; };
+		3B3553D6181BE21E00B52C2C /* xslstyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553CC181BE21E00B52C2C /* xslstyle.css */; };
+		3B3553D7181BE21E00B52C2C /* Your App Here.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B3553CD181BE21E00B52C2C /* Your App Here.xml */; };
 		3BF31A2817FE67D900603568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2717FE67D900603568 /* Foundation.framework */; };
 		3BF31A2A17FE67D900603568 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2917FE67D900603568 /* CoreGraphics.framework */; };
 		3BF31A2C17FE67D900603568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2B17FE67D900603568 /* UIKit.framework */; };
@@ -55,33 +51,29 @@
 
 /* Begin PBXFileReference section */
 		2AA2AC7808474038A921D7F3 /* libPods-iOSCodersApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSCodersApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B2927B217FE69E40069748E /* Apps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apps.h; sourceTree = "<group>"; };
 		3B2927B317FE69E40069748E /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
 		3B2927B417FE69E40069748E /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
-		3B2927B517FE69E40069748E /* Mazey2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mazey2ViewController.h; sourceTree = "<group>"; };
-		3B2927B617FE69E40069748E /* MyScene4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene4.h; sourceTree = "<group>"; };
-		3B2927B717FE69E40069748E /* NSObject+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utils.h"; sourceTree = "<group>"; };
-		3B2927B817FE69E40069748E /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
-		3B2927B917FE69E40069748E /* Turtle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Turtle.h; sourceTree = "<group>"; };
-		3B2927C017FE6A130069748E /* Apps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apps.m; sourceTree = "<group>"; };
 		3B2927C117FE6A130069748E /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		3B2927C217FE6A130069748E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
-		3B2927C317FE6A130069748E /* Mazey2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mazey2ViewController.m; sourceTree = "<group>"; };
-		3B2927C417FE6A130069748E /* MyScene4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene4.m; sourceTree = "<group>"; };
-		3B2927C517FE6A130069748E /* NSObject+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
-		3B2927C617FE6A130069748E /* Subject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
-		3B2927C717FE6A130069748E /* Turtle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Turtle.m; sourceTree = "<group>"; };
-		3B2927C817FE6A130069748E /* car_top_copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car_top_copy.png; sourceTree = "<group>"; };
-		3B2EE653181B7090003E6263 /* About.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = About.xml; path = Design/About.xml; sourceTree = SOURCE_ROOT; };
-		3B2EE654181B7090003E6263 /* index.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = index.xml; path = Design/index.xml; sourceTree = SOURCE_ROOT; };
-		3B2EE655181B7090003E6263 /* index.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = index.xsl; path = Design/index.xsl; sourceTree = SOURCE_ROOT; };
-		3B2EE657181B7090003E6263 /* fmt.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = fmt.js; path = ../Design/lib/fmt.js; sourceTree = "<group>"; };
-		3B2EE658181B7090003E6263 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ../Design/lib/jquery.min.js; sourceTree = "<group>"; };
-		3B2EE659181B7090003E6263 /* xslstyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = xslstyle.css; path = ../Design/lib/xslstyle.css; sourceTree = "<group>"; };
-		3B2EE65A181B7090003E6263 /* Logistics.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Logistics.xml; path = Design/Logistics.xml; sourceTree = SOURCE_ROOT; };
-		3B2EE65B181B7090003E6263 /* page.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = page.xsl; path = Design/page.xsl; sourceTree = SOURCE_ROOT; };
-		3B2EE65C181B7090003E6263 /* Resources.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Resources.xml; path = Design/Resources.xml; sourceTree = SOURCE_ROOT; };
-		3B2EE65D181B7090003E6263 /* Your App Here.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Your App Here.xml"; path = "Design/Your App Here.xml"; sourceTree = SOURCE_ROOT; };
+		3B3553B5181BE02000B52C2C /* car_top_copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car_top_copy.png; sourceTree = "<group>"; };
+		3B3553B6181BE02000B52C2C /* Mazey2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mazey2ViewController.h; sourceTree = "<group>"; };
+		3B3553B7181BE02000B52C2C /* Mazey2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mazey2ViewController.m; sourceTree = "<group>"; };
+		3B3553B8181BE02000B52C2C /* MyScene4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene4.h; sourceTree = "<group>"; };
+		3B3553B9181BE02000B52C2C /* MyScene4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene4.m; sourceTree = "<group>"; };
+		3B3553BA181BE02000B52C2C /* NSObject+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utils.h"; sourceTree = "<group>"; };
+		3B3553BB181BE02000B52C2C /* NSObject+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
+		3B3553BC181BE02000B52C2C /* Turtle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Turtle.h; sourceTree = "<group>"; };
+		3B3553BD181BE02000B52C2C /* Turtle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Turtle.m; sourceTree = "<group>"; };
+		3B3553C4181BE21E00B52C2C /* About.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = About.xml; sourceTree = "<group>"; };
+		3B3553C5181BE21E00B52C2C /* fmt.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = fmt.js; sourceTree = "<group>"; };
+		3B3553C6181BE21E00B52C2C /* index.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = index.xml; sourceTree = "<group>"; };
+		3B3553C7181BE21E00B52C2C /* index.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = index.xsl; sourceTree = "<group>"; };
+		3B3553C8181BE21E00B52C2C /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		3B3553C9181BE21E00B52C2C /* Logistics.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Logistics.xml; sourceTree = "<group>"; };
+		3B3553CA181BE21E00B52C2C /* page.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = page.xsl; sourceTree = "<group>"; };
+		3B3553CB181BE21E00B52C2C /* Resources.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Resources.xml; sourceTree = "<group>"; };
+		3B3553CC181BE21E00B52C2C /* xslstyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = xslstyle.css; sourceTree = "<group>"; };
+		3B3553CD181BE21E00B52C2C /* Your App Here.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Your App Here.xml"; sourceTree = "<group>"; };
 		3BF31A2417FE67D900603568 /* iOSCodersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCodersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF31A2717FE67D900603568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3BF31A2917FE67D900603568 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,37 +122,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B36501D17FE73A7001D966B /* WebPages */ = {
+		3B3553B3181BE02000B52C2C /* Apps */ = {
 			isa = PBXGroup;
 			children = (
-				3B2EE654181B7090003E6263 /* index.xml */,
-				3B2EE655181B7090003E6263 /* index.xsl */,
-				3B2EE659181B7090003E6263 /* xslstyle.css */,
-				3B2EE653181B7090003E6263 /* About.xml */,
-				3B2EE65A181B7090003E6263 /* Logistics.xml */,
-				3B2EE65C181B7090003E6263 /* Resources.xml */,
-				3B2EE65D181B7090003E6263 /* Your App Here.xml */,
-				3B2EE65B181B7090003E6263 /* page.xsl */,
-				3B2EE657181B7090003E6263 /* fmt.js */,
-				3B2EE658181B7090003E6263 /* jquery.min.js */,
+				3B3553B4181BE02000B52C2C /* Mazey2 */,
 			);
-			name = WebPages;
+			path = Apps;
 			sourceTree = "<group>";
 		};
-		3B36501E17FE7402001D966B /* Mazey2 */ = {
+		3B3553B4181BE02000B52C2C /* Mazey2 */ = {
 			isa = PBXGroup;
 			children = (
-				3B2927C817FE6A130069748E /* car_top_copy.png */,
-				3B2927B517FE69E40069748E /* Mazey2ViewController.h */,
-				3B2927C317FE6A130069748E /* Mazey2ViewController.m */,
-				3B2927B617FE69E40069748E /* MyScene4.h */,
-				3B2927C417FE6A130069748E /* MyScene4.m */,
-				3B2927B717FE69E40069748E /* NSObject+Utils.h */,
-				3B2927C517FE6A130069748E /* NSObject+Utils.m */,
-				3B2927B917FE69E40069748E /* Turtle.h */,
-				3B2927C717FE6A130069748E /* Turtle.m */,
+				3B3553B5181BE02000B52C2C /* car_top_copy.png */,
+				3B3553B6181BE02000B52C2C /* Mazey2ViewController.h */,
+				3B3553B7181BE02000B52C2C /* Mazey2ViewController.m */,
+				3B3553B8181BE02000B52C2C /* MyScene4.h */,
+				3B3553B9181BE02000B52C2C /* MyScene4.m */,
+				3B3553BA181BE02000B52C2C /* NSObject+Utils.h */,
+				3B3553BB181BE02000B52C2C /* NSObject+Utils.m */,
+				3B3553BC181BE02000B52C2C /* Turtle.h */,
+				3B3553BD181BE02000B52C2C /* Turtle.m */,
 			);
-			name = Mazey2;
+			path = Mazey2;
+			sourceTree = "<group>";
+		};
+		3B3553C3181BE21E00B52C2C /* WebPages */ = {
+			isa = PBXGroup;
+			children = (
+				3B3553C4181BE21E00B52C2C /* About.xml */,
+				3B3553C5181BE21E00B52C2C /* fmt.js */,
+				3B3553C6181BE21E00B52C2C /* index.xml */,
+				3B3553C7181BE21E00B52C2C /* index.xsl */,
+				3B3553C8181BE21E00B52C2C /* jquery.min.js */,
+				3B3553C9181BE21E00B52C2C /* Logistics.xml */,
+				3B3553CA181BE21E00B52C2C /* page.xsl */,
+				3B3553CB181BE21E00B52C2C /* Resources.xml */,
+				3B3553CC181BE21E00B52C2C /* xslstyle.css */,
+				3B3553CD181BE21E00B52C2C /* Your App Here.xml */,
+			);
+			path = WebPages;
 			sourceTree = "<group>";
 		};
 		3BF31A1B17FE67D900603568 = {
@@ -206,13 +206,9 @@
 				3B2927C117FE6A130069748E /* CenterViewController.m */,
 				3B2927B417FE69E40069748E /* LeftViewController.h */,
 				3B2927C217FE6A130069748E /* LeftViewController.m */,
-				3B2927B217FE69E40069748E /* Apps.h */,
-				3B2927C017FE6A130069748E /* Apps.m */,
-				3B2927B817FE69E40069748E /* Subject.h */,
-				3B2927C617FE6A130069748E /* Subject.m */,
 				3BF31A4217FE67D900603568 /* Images.xcassets */,
-				3B36501D17FE73A7001D966B /* WebPages */,
-				3B36501E17FE7402001D966B /* Mazey2 */,
+				3B3553C3181BE21E00B52C2C /* WebPages */,
+				3B3553B3181BE02000B52C2C /* Apps */,
 				3BF31A2E17FE67D900603568 /* Supporting Files */,
 			);
 			path = iOSCodersApp;
@@ -329,21 +325,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3553D4181BE21E00B52C2C /* page.xsl in Resources */,
+				3B3553D0181BE21E00B52C2C /* index.xml in Resources */,
 				3B2EE66B181B72C5003E6263 /* Main_iPad.storyboard in Resources */,
 				3B2EE66A181B72A2003E6263 /* Main_iPhone.storyboard in Resources */,
-				3B2EE669181B70AE003E6263 /* jquery.min.js in Resources */,
-				3B2EE668181B70A9003E6263 /* fmt.js in Resources */,
-				3B2EE664181B7090003E6263 /* Logistics.xml in Resources */,
-				3B2EE65E181B7090003E6263 /* About.xml in Resources */,
-				3B2EE663181B7090003E6263 /* xslstyle.css in Resources */,
-				3B2EE667181B7090003E6263 /* Your App Here.xml in Resources */,
 				3BF31A4317FE67D900603568 /* Images.xcassets in Resources */,
-				3B2EE665181B7090003E6263 /* page.xsl in Resources */,
+				3B3553CE181BE21E00B52C2C /* About.xml in Resources */,
+				3B3553D3181BE21E00B52C2C /* Logistics.xml in Resources */,
 				3BF31A3217FE67D900603568 /* InfoPlist.strings in Resources */,
-				3B2EE666181B7090003E6263 /* Resources.xml in Resources */,
-				3B2EE660181B7090003E6263 /* index.xsl in Resources */,
-				3B2EE65F181B7090003E6263 /* index.xml in Resources */,
-				3B2927D817FE6A130069748E /* car_top_copy.png in Resources */,
+				3B3553D1181BE21E00B52C2C /* index.xsl in Resources */,
+				3B3553BE181BE02000B52C2C /* car_top_copy.png in Resources */,
+				3B3553D7181BE21E00B52C2C /* Your App Here.xml in Resources */,
+				3B3553D5181BE21E00B52C2C /* Resources.xml in Resources */,
+				3B3553D6181BE21E00B52C2C /* xslstyle.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,16 +419,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2927D317FE6A130069748E /* Mazey2ViewController.m in Sources */,
-				3B2927D017FE6A130069748E /* Apps.m in Sources */,
-				3B2927D417FE6A130069748E /* MyScene4.m in Sources */,
-				3B2927D717FE6A130069748E /* Turtle.m in Sources */,
-				3B2927D617FE6A130069748E /* Subject.m in Sources */,
+				3B3553BF181BE02000B52C2C /* Mazey2ViewController.m in Sources */,
+				3B3553C1181BE02000B52C2C /* NSObject+Utils.m in Sources */,
 				3BF31A3817FE67D900603568 /* AppDelegate.m in Sources */,
+				3B3553C2181BE02000B52C2C /* Turtle.m in Sources */,
 				3B2927D217FE6A130069748E /* LeftViewController.m in Sources */,
-				3B2927D517FE6A130069748E /* NSObject+Utils.m in Sources */,
 				3BF31A3417FE67D900603568 /* main.m in Sources */,
 				3B2927D117FE6A130069748E /* CenterViewController.m in Sources */,
+				3B3553C0181BE02000B52C2C /* MyScene4.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

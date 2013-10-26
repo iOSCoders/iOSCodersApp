@@ -14,8 +14,6 @@
 
 @interface CenterViewController() {
     NSInteger i;
-    Subject *subject;
-    Apps *apps;
     NSMutableArray *pages;
     UIWebView *wv;
     BOOL isPad;

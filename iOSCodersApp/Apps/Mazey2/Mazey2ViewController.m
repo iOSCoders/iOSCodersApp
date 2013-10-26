@@ -17,7 +17,7 @@
 {
     [super viewDidLoad];
     
-    self.title = @"Mazey (swipe to return)";
+    self.title = @"Mazey (swipe right to exit)";
     
     UISwipeGestureRecognizer *s = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(bye)];
     [self.view addGestureRecognizer:s];
