@@ -8,14 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MMDrawerController.h>
-#import "Subject.h"
-#import "Apps.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property MMDrawerController *drawerController;
-@property (strong, nonatomic) Subject *subject;
-@property (strong, nonatomic) Apps *apps;
+@property (strong, nonatomic) NSMutableArray *pages, *apps;
+@property (strong, nonatomic) NSString *webPages;
 
 @end

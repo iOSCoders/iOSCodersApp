@@ -1,6 +1,6 @@
 html {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 8pt;
+    font-size: 10pt;
 }
 
 body {
@@ -18,21 +18,13 @@ body {
     padding-top: 1em;
 }
 
-
 .sub-heading {
     font-weight: bold;
     font-style: italic;
     padding-top: 0.5em;
+    margin-left: 2em;
 }
 
-.tiny {
-    font-size: 70%;
-}
-
-.pro {
-	background-color: lightgrey;
-}
-
-table {
-    text-indent: 2.5em;
+.content {
+    margin-left: 1em;
 }

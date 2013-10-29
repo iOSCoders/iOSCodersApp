@@ -14,11 +14,14 @@
 
 @interface CenterViewController() {
     NSInteger i;
-    Subject *subject;
-    Apps *apps;
+    NSMutableArray *pages, *apps;
+    NSString *webPages;
     UIWebView *wv;
     BOOL isPad;
     CGRect landscapeRect, portraitRect;
+    NSString *curElement;
+    NSMutableArray *download;
+    NSString *curVersion, *newVersion;
 }
 
 @end
@@ -31,9 +34,9 @@
         // Custom initialization
         i = 0;
         self.view.backgroundColor = [UIColor cyanColor];
-        subject = ((AppDelegate *)[UIApplication sharedApplication].delegate).subject;
-        apps = ((AppDelegate *)[UIApplication sharedApplication].delegate).apps;
-        [self setPage:SubjectPage];
+        pages = ((AppDelegate *)[UIApplication sharedApplication].delegate).pages;
+        webPages = ((AppDelegate *)[UIApplication sharedApplication].delegate).webPages;
+        [self setPage:pages[0]];
         [self setRestorationIdentifier:@"MMExampleCenterControllerRestorationKey"];
         CGFloat w = [[UIScreen mainScreen] bounds].size.width;
         isPad = (w > 320);
@@ -41,15 +44,15 @@
     return self;
 }
 
-- (void)setPage:(ThePage)p {
-    if (p == SubjectPage) {
-        [self loadPage:subject.subject];
-    } else {
-        if (apps.curApp == Mazey2) {
-            Mazey2ViewController *vc = [[Mazey2ViewController alloc] init];
-            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
-            [self presentViewController:navigationController animated:YES completion:^{}];
-        }
+- (void)setPage:(NSString *)p {
+    [self loadPage:p];
+}
+
+- (void)runApp:(NSString *)app {
+    if ([app isEqualToString:@"Mazey2"]) {
+        Mazey2ViewController *vc = [[Mazey2ViewController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
+        [self presentViewController:navigationController animated:YES completion:^{}];
     }
 }
 
@@ -103,12 +106,36 @@
 
 - (void)loadPage:(NSString *)title {
     self.navigationItem.title = title;
-    NSURL *url = [[NSBundle mainBundle] URLForResource:subject.subject withExtension:@"html"];
+    NSURL *url = [NSURL fileURLWithPath:[[webPages stringByAppendingPathComponent:title] stringByAppendingPathExtension:@"xml"]];
     [wv loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
+#pragma mark UIWebViewDelegate
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+#ifdef DEBUG
+    NSLog(@"%s", __func__);
+#endif
     [self initZoom];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+#ifdef DEBUG
+    NSLog(@"%s", __func__);
+#endif
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+#ifdef DEBUG
+    NSLog(@"%s", __func__);
+#endif
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+#ifdef DEBUG
+    NSLog(@"%s", __func__);
+#endif
+    return YES;
 }
 
 -(void)setupLeftMenuButton {

@@ -12,13 +12,18 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+@interface AppDelegate() {
+}
+@end
+
 @implementation AppDelegate
 
 @synthesize drawerController;
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.subject = [Subject theSubject];
-    self.apps = [Apps theApps];
+    self.pages = [NSMutableArray array];
+    self.apps = [NSMutableArray array];
+    self.webPages = @"WebPages";
     CenterViewController *center = [[CenterViewController alloc] init];
     LeftViewController *left = [[LeftViewController alloc] init];
     left.cvc = center;
@@ -62,5 +67,4 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 }
-
 @end
