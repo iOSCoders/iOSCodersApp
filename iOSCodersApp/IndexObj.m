@@ -62,7 +62,7 @@
             NSURL *url = [self webSiteURLFor:f];
             NSData *data = [NSData dataWithContentsOfURL:url];
             NSString *tmpFile = [NSTemporaryDirectory() stringByAppendingString:f];
-            [[NSFileManager defaultManager] removeItemAtPath:tmpFile error:nil];
+            [[NSFileManager defaultManager] removeItemAtPath:tmpFile error:&error];
             [data writeToFile:tmpFile atomically:YES];
             ok = [[NSFileManager defaultManager] copyItemAtPath:tmpFile toPath:[updateFolder.path stringByAppendingPathComponent:f] error:&error];
             [[NSFileManager defaultManager] removeItemAtPath:tmpFile error:nil];
@@ -72,8 +72,8 @@
         // if the update files were downloaded ok, then move them
         if (ok) {
             for (NSString *f in self.download) {
-                [[NSFileManager defaultManager] removeItemAtPath:[self.webPages stringByAppendingPathComponent:f] error:nil];
-                [[NSFileManager defaultManager] moveItemAtPath:[updateFolder.path stringByAppendingPathComponent:f] toPath:[self.webPages stringByAppendingPathComponent:f] error:nil];
+                [[NSFileManager defaultManager] removeItemAtPath:[self.webPages stringByAppendingPathComponent:f] error:&error];
+                [[NSFileManager defaultManager] moveItemAtPath:[updateFolder.path stringByAppendingPathComponent:f] toPath:[self.webPages stringByAppendingPathComponent:f] error:&error];
             }
             NSURL *url = [NSURL fileURLWithPath:[self.webPages stringByAppendingPathComponent:@"index.xml"]];
             NSXMLParser *p = [[NSXMLParser alloc] initWithContentsOfURL:url];

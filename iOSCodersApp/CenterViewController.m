@@ -45,6 +45,7 @@
 }
 
 - (void)setPage:(NSString *)p {
+    [wv reload];
     [self loadPage:p];
 }
 
@@ -108,7 +109,6 @@
     self.navigationItem.title = title;
     NSURL *url = [NSURL fileURLWithPath:[[webPages stringByAppendingPathComponent:title] stringByAppendingPathExtension:@"xml"]];
     [wv loadRequest:[NSURLRequest requestWithURL:url]];
-    [wv reload];
 }
 
 #pragma mark UIWebViewDelegate
