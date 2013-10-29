@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MMDrawerController.h>
+#import "IndexObj.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -15,5 +16,6 @@
 @property MMDrawerController *drawerController;
 @property (strong, nonatomic) NSMutableArray *pages, *apps;
 @property (strong, nonatomic) NSString *webPages;
+@property (strong, nonatomic) IndexObj *indexObj;
 
 @end

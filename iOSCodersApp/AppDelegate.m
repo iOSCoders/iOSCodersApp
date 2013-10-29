@@ -21,9 +21,14 @@
 @synthesize drawerController;
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.pages = [NSMutableArray array];
-    self.apps = [NSMutableArray array];
-    self.webPages = @"WebPages";
+
+    self.indexObj = [IndexObj theIndex];
+    [self.indexObj cacheIndex];
+
+    self.pages = self.indexObj.pages;
+    self.apps = self.indexObj.apps;
+    self.webPages = self.indexObj.webPages;
+
     CenterViewController *center = [[CenterViewController alloc] init];
     LeftViewController *left = [[LeftViewController alloc] init];
     left.cvc = center;

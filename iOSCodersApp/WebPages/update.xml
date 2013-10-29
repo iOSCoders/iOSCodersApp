@@ -3,4 +3,5 @@
 <root>
     <newversion>1</newversion>
     <download>index.xml</download>
+    <download>About.xml</download>
 </root>
