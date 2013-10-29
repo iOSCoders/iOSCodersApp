@@ -14,11 +14,14 @@
 
 @interface CenterViewController() {
     NSInteger i;
-    NSMutableArray *pages;
+    NSMutableArray *pages, *apps;
     NSString *webPages;
     UIWebView *wv;
     BOOL isPad;
     CGRect landscapeRect, portraitRect;
+    NSString *curElement;
+    NSMutableArray *download;
+    NSString *curVersion, *newVersion;
 }
 
 @end
@@ -105,10 +108,35 @@
     self.navigationItem.title = title;
     NSURL *url = [NSURL fileURLWithPath:[[webPages stringByAppendingPathComponent:title] stringByAppendingPathExtension:@"xml"]];
     [wv loadRequest:[NSURLRequest requestWithURL:url]];
+    [wv reload];
 }
 
+#pragma mark UIWebViewDelegate
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+#ifdef DEBUG
+    NSLog(@"%s", __func__);
+#endif
     [self initZoom];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+#ifdef DEBUG
+    NSLog(@"%s", __func__);
+#endif
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+#ifdef DEBUG
+    NSLog(@"%s", __func__);
+#endif
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+#ifdef DEBUG
+    NSLog(@"%s", __func__);
+#endif
+    return YES;
 }
 
 -(void)setupLeftMenuButton {

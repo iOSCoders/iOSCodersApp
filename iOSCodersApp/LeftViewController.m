@@ -12,7 +12,12 @@
 #import "AppDelegate.h"
 
 @interface LeftViewController() {
-    NSArray *pages, *apps;
+    NSMutableArray *pages, *apps;
+    NSString *curElement;
+    NSMutableArray *download;
+    NSString *curVersion, *newVersion;
+    NSString *webPages;
+    IndexObj *indexObj;
 }
 
 @end
@@ -29,6 +34,7 @@
         [self setRestorationIdentifier:@"MMExampleLeftSideDrawerController"];
         apps = ((AppDelegate *)[UIApplication sharedApplication].delegate).apps;
         pages = ((AppDelegate *)[UIApplication sharedApplication].delegate).pages;
+        indexObj = ((AppDelegate *)[UIApplication sharedApplication].delegate).indexObj;
     }
     return self;
 }
@@ -39,23 +45,28 @@
     [self.tableView setContentInset:UIEdgeInsetsMake(20, self.tableView.contentInset.left, self.tableView.contentInset.bottom, self.tableView.contentInset.right)];}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
         return pages.count;
     }
-    return apps.count;
+    if (section == 1){
+        return apps.count;
+    }
+    return 1;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) {
         return @"Subjects";
     }
-    return @"Apps";
+    if (section == 1){
+        return @"Apps";
+    }
+    return @"Options";
 }
-
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *MyIdentifier = @"MyIdentifier";
@@ -72,8 +83,11 @@
     // Set up the cell.
     if (indexPath.section == 0) {
         cell.textLabel.text = pages[indexPath.row];
-    } else {
+    } else if (indexPath.section == 1) {
         cell.textLabel.text = apps[indexPath.row];
+    }
+    else {
+        cell.textLabel.text = @"Update";
     }
     cell.backgroundColor = self.view.backgroundColor;
     
@@ -82,12 +96,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MMDrawerController *pvc = (MMDrawerController *)self.parentViewController;
+    if (indexPath.section == 2) {
+        [indexObj update];
+        [indexObj cacheIndex];
+    }
     [pvc closeDrawerAnimated:YES completion:^(BOOL finished) {
         printf("closed.\n");
         if (indexPath.section == 0) {
             [self.cvc setPage:pages[indexPath.row]];
-        } else {
-            [self.cvc runApp:apps[indexPath.row]];
+        } else if (indexPath.section == 1) {
+            [self.cvc runApp:pages[indexPath.row]];
+        } else if (indexPath.section == 2) {
+            [self.cvc setPage:pages[0]];
         }
     }];
 }

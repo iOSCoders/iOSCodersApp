@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5E4FCE3938DD4304B4709F89"
+               BlueprintIdentifier = "5BFE834FF5F04391A8CE3095"
                BuildableName = "libPods-iOSCodersAppTests-MMDrawerController.a"
                BlueprintName = "Pods-iOSCodersAppTests-MMDrawerController"
                ReferencedContainer = "container:Pods.xcodeproj">

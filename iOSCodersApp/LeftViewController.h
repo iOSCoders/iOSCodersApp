@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeftViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface LeftViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate>
 
 @property CenterViewController *cvc;
 
