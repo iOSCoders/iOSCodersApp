@@ -42,7 +42,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.tableView setContentInset:UIEdgeInsetsMake(20, self.tableView.contentInset.left, self.tableView.contentInset.bottom, self.tableView.contentInset.right)];}
+    [self.tableView setContentInset:UIEdgeInsetsMake(20, self.tableView.contentInset.left, self.tableView.contentInset.bottom, self.tableView.contentInset.right)];
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 3;
@@ -94,19 +95,22 @@
     return cell;
 }
 
+- (NSString *)indexPathToString:(NSIndexPath *)indexPath {
+    return [NSString stringWithFormat:@"section: %d, row: %d", indexPath.section, indexPath.row];
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MMDrawerController *pvc = (MMDrawerController *)self.parentViewController;
-    if (indexPath.section == 2) {
-        [indexObj update];
-        [indexObj cacheIndex];
-    }
     [pvc closeDrawerAnimated:YES completion:^(BOOL finished) {
         printf("closed.\n");
         if (indexPath.section == 0) {
             [self.cvc setPage:pages[indexPath.row]];
         } else if (indexPath.section == 1) {
-            [self.cvc runApp:pages[indexPath.row]];
+            [self.cvc runApp:apps[indexPath.row]];
         } else if (indexPath.section == 2) {
+            [indexObj update];
+            [indexObj cacheIndex];
+            [tableView reloadData];
             [self.cvc setPage:pages[0]];
         }
     }];
