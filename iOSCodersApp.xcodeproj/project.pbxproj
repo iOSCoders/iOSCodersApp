@@ -24,6 +24,15 @@
 		3BD2D111181F5014002DA976 /* update.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0FF181F5014002DA976 /* update.xml */; };
 		3BD2D112181F5014002DA976 /* xslstyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D100181F5014002DA976 /* xslstyle.css */; };
 		3BD2D113181F5014002DA976 /* Your App Here.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D101181F5014002DA976 /* Your App Here.xml */; };
+		3BD567C3184D6C9A000DD457 /* CardImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD567BB184D6C9A000DD457 /* CardImages.xcassets */; };
+		3BD567C4184D6C9A000DD457 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567BC184D6C9A000DD457 /* Button.m */; };
+		3BD567C5184D6C9A000DD457 /* CardClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567BD184D6C9A000DD457 /* CardClass.m */; };
+		3BD567C6184D6C9A000DD457 /* CardsClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567BE184D6C9A000DD457 /* CardsClass.m */; };
+		3BD567C7184D6C9A000DD457 /* NewCardTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567BF184D6C9A000DD457 /* NewCardTable.m */; };
+		3BD567C8184D6C9A000DD457 /* NewCardTable+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567C0184D6C9A000DD457 /* NewCardTable+Layout.m */; };
+		3BD567C9184D6C9A000DD457 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567C1184D6C9A000DD457 /* Player.m */; };
+		3BD567CA184D6C9A000DD457 /* SuitClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567C2184D6C9A000DD457 /* SuitClass.m */; };
+		3BD567CD184D6DA2000DD457 /* GameOfWarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567CC184D6DA2000DD457 /* GameOfWarViewController.m */; };
 		3BF31A2817FE67D900603568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2717FE67D900603568 /* Foundation.framework */; };
 		3BF31A2A17FE67D900603568 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2917FE67D900603568 /* CoreGraphics.framework */; };
 		3BF31A2C17FE67D900603568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2B17FE67D900603568 /* UIKit.framework */; };
@@ -80,6 +89,23 @@
 		3BD2D0FF181F5014002DA976 /* update.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = update.xml; sourceTree = "<group>"; };
 		3BD2D100181F5014002DA976 /* xslstyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = xslstyle.css; sourceTree = "<group>"; };
 		3BD2D101181F5014002DA976 /* Your App Here.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Your App Here.xml"; sourceTree = "<group>"; };
+		3BD567B4184D6C9A000DD457 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Button.h; path = GameOfWar/Button.h; sourceTree = "<group>"; };
+		3BD567B5184D6C9A000DD457 /* CardClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardClass.h; path = GameOfWar/CardClass.h; sourceTree = "<group>"; };
+		3BD567B6184D6C9A000DD457 /* CardsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardsClass.h; path = GameOfWar/CardsClass.h; sourceTree = "<group>"; };
+		3BD567B7184D6C9A000DD457 /* NewCardTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewCardTable.h; path = GameOfWar/NewCardTable.h; sourceTree = "<group>"; };
+		3BD567B8184D6C9A000DD457 /* NewCardTable+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NewCardTable+Layout.h"; path = "GameOfWar/NewCardTable+Layout.h"; sourceTree = "<group>"; };
+		3BD567B9184D6C9A000DD457 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = GameOfWar/Player.h; sourceTree = "<group>"; };
+		3BD567BA184D6C9A000DD457 /* SuitClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuitClass.h; path = GameOfWar/SuitClass.h; sourceTree = "<group>"; };
+		3BD567BB184D6C9A000DD457 /* CardImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = CardImages.xcassets; path = GameOfWar/CardImages.xcassets; sourceTree = "<group>"; };
+		3BD567BC184D6C9A000DD457 /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Button.m; path = GameOfWar/Button.m; sourceTree = "<group>"; };
+		3BD567BD184D6C9A000DD457 /* CardClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardClass.m; path = GameOfWar/CardClass.m; sourceTree = "<group>"; };
+		3BD567BE184D6C9A000DD457 /* CardsClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardsClass.m; path = GameOfWar/CardsClass.m; sourceTree = "<group>"; };
+		3BD567BF184D6C9A000DD457 /* NewCardTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewCardTable.m; path = GameOfWar/NewCardTable.m; sourceTree = "<group>"; };
+		3BD567C0184D6C9A000DD457 /* NewCardTable+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NewCardTable+Layout.m"; path = "GameOfWar/NewCardTable+Layout.m"; sourceTree = "<group>"; };
+		3BD567C1184D6C9A000DD457 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = GameOfWar/Player.m; sourceTree = "<group>"; };
+		3BD567C2184D6C9A000DD457 /* SuitClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuitClass.m; path = GameOfWar/SuitClass.m; sourceTree = "<group>"; };
+		3BD567CB184D6DA2000DD457 /* GameOfWarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOfWarViewController.h; path = GameOfWar/GameOfWarViewController.h; sourceTree = "<group>"; };
+		3BD567CC184D6DA2000DD457 /* GameOfWarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOfWarViewController.m; path = GameOfWar/GameOfWarViewController.m; sourceTree = "<group>"; };
 		3BF31A2417FE67D900603568 /* iOSCodersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCodersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF31A2717FE67D900603568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3BF31A2917FE67D900603568 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,10 +155,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B912DA2184D6B13003CAE70 /* GameOfWar */ = {
+			isa = PBXGroup;
+			children = (
+				3BD567CB184D6DA2000DD457 /* GameOfWarViewController.h */,
+				3BD567CC184D6DA2000DD457 /* GameOfWarViewController.m */,
+				3BD567B4184D6C9A000DD457 /* Button.h */,
+				3BD567BC184D6C9A000DD457 /* Button.m */,
+				3BD567B5184D6C9A000DD457 /* CardClass.h */,
+				3BD567BD184D6C9A000DD457 /* CardClass.m */,
+				3BD567B6184D6C9A000DD457 /* CardsClass.h */,
+				3BD567BE184D6C9A000DD457 /* CardsClass.m */,
+				3BD567B7184D6C9A000DD457 /* NewCardTable.h */,
+				3BD567BF184D6C9A000DD457 /* NewCardTable.m */,
+				3BD567B8184D6C9A000DD457 /* NewCardTable+Layout.h */,
+				3BD567C0184D6C9A000DD457 /* NewCardTable+Layout.m */,
+				3BD567B9184D6C9A000DD457 /* Player.h */,
+				3BD567C1184D6C9A000DD457 /* Player.m */,
+				3BD567BA184D6C9A000DD457 /* SuitClass.h */,
+				3BD567C2184D6C9A000DD457 /* SuitClass.m */,
+				3BD567BB184D6C9A000DD457 /* CardImages.xcassets */,
+			);
+			name = GameOfWar;
+			sourceTree = "<group>";
+		};
 		3BD2D0E6181F5013002DA976 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
 				3BD2D0E7181F5013002DA976 /* Mazey2 */,
+				3B912DA2184D6B13003CAE70 /* GameOfWar */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -344,6 +395,7 @@
 				3BD2D102181F5014002DA976 /* car_top_copy.png in Resources */,
 				3BD2D109181F5014002DA976 /* About.xml in Resources */,
 				3BD2D10E181F5014002DA976 /* Logistics.xml in Resources */,
+				3BD567C3184D6C9A000DD457 /* CardImages.xcassets in Resources */,
 				3BF31A3B17FE67D900603568 /* Main_iPhone.storyboard in Resources */,
 				3BD2D111181F5014002DA976 /* update.xml in Resources */,
 				3BD2D10C181F5014002DA976 /* index.xsl in Resources */,
@@ -431,12 +483,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BD2D103181F5014002DA976 /* Mazey2ViewController.m in Sources */,
+				3BD567CA184D6C9A000DD457 /* SuitClass.m in Sources */,
+				3BD567C7184D6C9A000DD457 /* NewCardTable.m in Sources */,
 				3BD2D105181F5014002DA976 /* NSObject+Utils.m in Sources */,
+				3BD567C6184D6C9A000DD457 /* CardsClass.m in Sources */,
+				3BD567C9184D6C9A000DD457 /* Player.m in Sources */,
 				3BF31A3817FE67D900603568 /* AppDelegate.m in Sources */,
+				3BD567CD184D6DA2000DD457 /* GameOfWarViewController.m in Sources */,
 				3BD2D106181F5014002DA976 /* Turtle.m in Sources */,
 				3B2927D217FE6A130069748E /* LeftViewController.m in Sources */,
+				3BD567C8184D6C9A000DD457 /* NewCardTable+Layout.m in Sources */,
 				3BF31A3417FE67D900603568 /* main.m in Sources */,
+				3BD567C5184D6C9A000DD457 /* CardClass.m in Sources */,
 				3B2927D117FE6A130069748E /* CenterViewController.m in Sources */,
+				3BD567C4184D6C9A000DD457 /* Button.m in Sources */,
 				3B3A2239181F58330076DD6E /* IndexObj.m in Sources */,
 				3BD2D104181F5014002DA976 /* MyScene4.m in Sources */,
 			);

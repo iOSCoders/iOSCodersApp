@@ -11,6 +11,7 @@
 #import <MMDrawerBarButtonItem.h>
 #import <UIViewController+MMDrawerController.h>
 #import "MyScene4.h"
+#import "GameOfWarViewController.h"
 
 @interface CenterViewController() {
     NSInteger i;
@@ -52,6 +53,10 @@
 - (void)runApp:(NSString *)app {
     if ([app isEqualToString:@"Mazey2"]) {
         Mazey2ViewController *vc = [[Mazey2ViewController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
+        [self presentViewController:navigationController animated:YES completion:^{}];
+    } else if ([app isEqualToString:@"GameOfWar"]) {
+        GameOfWarViewController *vc = [[GameOfWarViewController alloc] init];
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
         [self presentViewController:navigationController animated:YES completion:^{}];
     } else {
