@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="page.xsl"?>
+<root>
+  <title>FAQ!!!</title>
+  <subject name="How do I use the debugger?" collapsed="false">
+    <node name="">
+      <content>
+        <p>Put a copy or reference to the email sent to Peter about this.</p>
+      </content>
+    </node>
+  </subject>
+  <subject name="How do I setup a web view?" collapsed="false">
+    <node name="">
+      <content>
+        <p>Create a tutorial for this.</p>
+      </content>
+    </node>
+  </subject>
+  <subject name="How do I distribute apps over the air?" collapsed="false">
+    <node name="">
+      <content>
+        <p>Put a reference to the presentation here.</p>
+      </content>
+    </node>
+  </subject>
+  <subject name="How do I find other iOS coders near me?" collapsed="false">
+    <node name="">
+      <content>
+        <p>Use the <site/> site!</p>
+      </content>
+    </node>
+  </subject>
+  <subject name="How do I create a drawer?" collapsed="false">
+    <node name="">
+      <content>
+        <p>Create a presentation for this. </p>
+      </content>
+    </node>
+  </subject>
+  <subject name="How do I use other peoples code?" collapsed="false">
+    <node name="">
+      <content>
+        <p>Create a presentation for this. Discuss Pods and GitHub. </p>
+      </content>
+    </node>
+  </subject>
+  <subject name="How do I sell an app?" collapsed="false">
+    <node name="">
+      <content>
+        <p>I wish I knew.</p>
+      </content>
+    </node>
+  </subject>
+  <subject name="How do I price apps?" collapsed="false">
+    <node name="">
+      <content>
+        <p>Make them free.</p>
+      </content>
+    </node>
+  </subject>
+  <subject name="How do I use setters and getters?" collapsed="false">
+    <node name="">
+      <content>
+        <p>Reference the SetterAndGetters project.</p>
+      </content>
+    </node>
+  </subject>
+  <subject name="How do I price apps?" collapsed="false">
+    <node name="">
+      <content>
+        <p>Make them free.</p>
+      </content>
+    </node>
+  </subject>
+  <subject name=" xxx " collapsed="false">
+    <node name="">
+      <content>
+        <p> xxx </p>
+      </content>
+    </node>
+  </subject>
+</root>

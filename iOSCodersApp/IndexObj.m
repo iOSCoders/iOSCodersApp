@@ -34,7 +34,7 @@
 /*
  The WebPages are distributed with the app. The Copy Files build phase copies the original versions to the ./WebPages directory.
  A completely new set of pages may be available on the website. These files should replace all the files in the WebPages directory.
- This is accomplished by downloading the entire folder to ./WebPages.update, then moving the files to ./WebPages.
+ This is accomplished by downloading the entire folder to ./WebPages/update, then moving the files to ./WebPages.
  If an error occurs during the download, the ./WebPages folder is left intact.
  */
 
@@ -42,30 +42,32 @@
 #ifdef DEBUG
     NSLog(@"%s", __func__);
 #endif
+
+#warning This is not working yet.
     
     // get the list of files to download from the server.
     NSURL *updateUrl = [self webSiteURLFor:@"update.xml"];
-    NSXMLParser *p = [[NSXMLParser alloc] initWithContentsOfURL:updateUrl];
+    if (!updateUrl) return; // bad URL or something
+
+    // create the ./WebPages/update folder if its not there
+    NSURL *updateFolder = [NSURL fileURLWithPath:[self.webPages stringByAppendingPathComponent:@"update"]];
+    NSError *error;
+    [[NSFileManager defaultManager] removeItemAtURL:updateFolder error:&error];
+    [[NSFileManager defaultManager] createDirectoryAtURL:updateFolder withIntermediateDirectories:NO attributes:nil error:nil];
+    BOOL ok = [self dldFile:@"update.xml" url:updateFolder] && [self dldFile:@"index.xsl" url:updateFolder];
+    if (!ok) return;
+    NSURL *updateXML = [NSURL URLWithString:@"update.xml" relativeToURL:updateFolder];
+    NSXMLParser *p = [[NSXMLParser alloc] initWithContentsOfURL:updateXML];
     p.delegate = self;
     if (![p parse]) {
-        NSLog(@"%s, parsing %@ failed", __func__, updateUrl.path);
+        NSLog(@"%s, parsing %@ failed", __func__, updateUrl.absoluteString);
         NSLog(@"Skipping update");
     } else {
 #pragma warning need to check a timestamp or something to avoid unnecessary i/o
-        // download them into the .update folder
-        NSURL *updateFolder = [NSURL fileURLWithPath:[self.webPages stringByAppendingPathComponent:@"update"]];
-        NSError *error;
-        [[NSFileManager defaultManager] removeItemAtURL:updateFolder error:&error];
-        [[NSFileManager defaultManager] createDirectoryAtURL:updateFolder withIntermediateDirectories:NO attributes:nil error:nil];
         BOOL ok = YES;
+        [self.download removeAllObjects];
         for (NSString *f in self.download) {
-            NSURL *url = [self webSiteURLFor:f];
-            NSData *data = [NSData dataWithContentsOfURL:url];
-            NSString *tmpFile = [NSTemporaryDirectory() stringByAppendingString:f];
-            [[NSFileManager defaultManager] removeItemAtPath:tmpFile error:&error];
-            [data writeToFile:tmpFile atomically:YES];
-            ok = [[NSFileManager defaultManager] copyItemAtPath:tmpFile toPath:[updateFolder.path stringByAppendingPathComponent:f] error:&error];
-            [[NSFileManager defaultManager] removeItemAtPath:tmpFile error:nil];
+            ok = [self dldFile:f url:updateFolder];
             if (!ok) break;
         }
         
@@ -81,7 +83,19 @@
         }
     }
 }
-
+    
+- (BOOL)dldFile:(NSString *)f url:(NSURL *)updateFolder {
+    NSError *error;
+    NSURL *url = [self webSiteURLFor:f];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    NSString *tmpFile = [NSTemporaryDirectory() stringByAppendingString:f];
+    [[NSFileManager defaultManager] removeItemAtPath:tmpFile error:&error];
+    [data writeToFile:tmpFile atomically:YES];
+    BOOL ok = [[NSFileManager defaultManager] copyItemAtPath:tmpFile toPath:[updateFolder.path stringByAppendingPathComponent:f] error:&error];
+    [[NSFileManager defaultManager] removeItemAtPath:tmpFile error:nil];
+    return ok;
+}
+    
 - (void)cacheIndex {
     self.pages = [NSMutableArray array];
     self.apps = [NSMutableArray array];
@@ -123,7 +137,10 @@
 }
 
 - (NSURL *)webSiteURLFor:(NSString *)f {
-    return [[NSURL alloc] initWithScheme:@"http" host:@"focusedforsuccess.net" path:[@"/iOSCoders/WebPages" stringByAppendingPathComponent:f]];
+    // https://github.com/iOSCoders/iOSCodersApp/tree/master/iOSCodersApp/WebPages
+    NSURL *url = [[NSURL alloc] initWithScheme:@"https" host:@"raw.github.com" path:[@"/iOSCoders/iOSCodersApp/tree/master/iOSCodersApp/WebPages" stringByAppendingPathComponent:f]];
+    NSLog(@"URL: %@", [url absoluteString]);
+    return url;
 }
 
 @end

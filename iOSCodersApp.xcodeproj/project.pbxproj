@@ -10,6 +10,7 @@
 		3B2927D117FE6A130069748E /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C117FE6A130069748E /* CenterViewController.m */; };
 		3B2927D217FE6A130069748E /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2927C217FE6A130069748E /* LeftViewController.m */; };
 		3B3A2239181F58330076DD6E /* IndexObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A2238181F58330076DD6E /* IndexObj.m */; };
+		3B73A0C3184DD32F00EB83DD /* FAQ.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B73A0C2184DD32F00EB83DD /* FAQ.xml */; };
 		3BD2D102181F5014002DA976 /* car_top_copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0E8181F5013002DA976 /* car_top_copy.png */; };
 		3BD2D103181F5014002DA976 /* Mazey2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2D0EA181F5013002DA976 /* Mazey2ViewController.m */; };
 		3BD2D104181F5014002DA976 /* MyScene4.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2D0EC181F5013002DA976 /* MyScene4.m */; };
@@ -68,6 +69,7 @@
 		3B2927C217FE6A130069748E /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		3B3A2237181F58330076DD6E /* IndexObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexObj.h; sourceTree = "<group>"; };
 		3B3A2238181F58330076DD6E /* IndexObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexObj.m; sourceTree = "<group>"; };
+		3B73A0C2184DD32F00EB83DD /* FAQ.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = FAQ.xml; sourceTree = "<group>"; };
 		3BD2D0E8181F5013002DA976 /* car_top_copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car_top_copy.png; sourceTree = "<group>"; };
 		3BD2D0E9181F5013002DA976 /* Mazey2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mazey2ViewController.h; sourceTree = "<group>"; };
 		3BD2D0EA181F5013002DA976 /* Mazey2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mazey2ViewController.m; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		3BD2D0F6181F5014002DA976 /* WebPages */ = {
 			isa = PBXGroup;
 			children = (
+				3B73A0C2184DD32F00EB83DD /* FAQ.xml */,
 				3BD567CE184D73AF000DD457 /* About iOS Coders.xml */,
 				3BD2D0F8181F5014002DA976 /* fmt.js */,
 				3BD2D0F9181F5014002DA976 /* index.xml */,
@@ -379,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B73A0C3184DD32F00EB83DD /* FAQ.xml in Resources */,
 				3BD567CF184D73AF000DD457 /* About iOS Coders.xml in Resources */,
 				3BD567D0184D7796000DD457 /* fmt.js in Resources */,
 				3BD2D10B181F5014002DA976 /* index.xml in Resources */,

@@ -290,7 +290,6 @@
 			children = (
 				41B48C6753B8470C8318FCEB /* Frameworks */,
 				F4692FFEA6F24F309C9B766F /* Pods */,
-				F31A76AF7ACB4BF096965638 /* Products */,
 				EDF4048E2DD04922AAC31FA1 /* Targets Support Files */,
 				F9DD7723513941438FA134D8 /* Podfile */,
 			);
@@ -308,6 +307,7 @@
 		F4692FFEA6F24F309C9B766F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				F31A76AF7ACB4BF096965638 /* Products */,
 				3AFC2F1FAC904A53B15D3E3A /* MMDrawerController */,
 			);
 			name = Pods;
