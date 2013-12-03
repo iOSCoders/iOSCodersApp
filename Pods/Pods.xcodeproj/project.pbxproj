@@ -564,7 +564,9 @@
 		81659CBE6AF74D5D81B7C9FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
@@ -572,8 +574,10 @@
 		8EB001175DF34BE28DE65D4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;

@@ -6,33 +6,30 @@
     <node name="">
       <content>
         <p>The iOS Coders are a group of enthusiasts that meet regularly to
-          discuss all aspects of writing iOS apps. Our primary purpose is to
-          develop relationships with other iOS coders in the North Suburbs of
-          Chicago.</p>
+        discuss all aspects of writing iOS apps. Our primary purpose is to
+        develop relationships with other iOS coders in the North Suburbs of
+        Chicago.</p>
         <p>We have members at all levels of experience who are interested in
-          helping each other get started or improve their skills. We also
-          discuss marketing and ways to pass App Store reviews.</p>
+        helping each other get started or improve their skills. We also discuss
+        marketing and ways to pass App Store reviews.</p>
         <p>Our meetings are casual and we spend a lot of time getting to know
-          new members. All of our members write iOS apps for the fun of it.
-          Some of us are professional programmers. Others are self-taught
-          hobbists. Most commonly, members have experience with other
-          programming languages and wish to start writing iOS apps.</p>
+        new members. All of our members write iOS apps for the fun of it.  Some
+        of us are professional programmers. Others are self-taught hobbists.
+        Most commonly, members have experience with other programming languages
+        and wish to start writing iOS apps.</p>
       </content>
     </node>
   </subject>
   <subject name="What We Do" collapsed="false">
     <node name="">
       <content>
-        <p>Someone usually prepares a tutorial or demonstration, which lasts
-          typically lasts about a half hour. Most of the members bring
-          questions or problems they need help with. We usally spend a lot of
-          time talking about how to help each other with these things.</p>
-        <p>
-          Material discussed is stored on the
-          <site/>
-          site, but will be moved to a
-          server or a Dropbox.
-        </p>
+        <p>We bring our iOS devices and Macs to show stuff we've been working
+        on. Someone usually prepares a half hour tutorial or demonstration.
+        Most of the members bring questions or problems they need help with. We
+        usally spend a lot of time talking about how to help each other with
+        these things.</p>
+        <p>Material discussed is stored on the <site/> site, but will be moved
+        to a server or a Dropbox.</p>
       </content>
     </node>
   </subject>
@@ -40,8 +37,8 @@
     <node name="">
       <content>
         <p>This app is available for anyone in the group to work on. We try to
-          use much of the iOS framework as possible to make it the most
-          comprehensive learning tool possible.</p>
+        use much of the iOS framework as possible to make it the most
+        comprehensive learning tool possible.</p>
       </content>
     </node>
   </subject>
@@ -50,9 +47,7 @@
       <content>
         We currently meeting the last Tuesday of every month at Starbucks in
         Libertyville. Usually about 4-6 people attend. We have space for up to
-        8 attendees. Details are on the
-        <site/>
-        site.
+        8 attendees. Details are on the <site/> site.
       </content>
     </node>
   </subject>
@@ -67,9 +62,10 @@
   </subject>
   <subject name="Embedded Apps" collapsed="false">
     <node name="">
-      <content>This app has a space for &quot;applets&quot;, basically an icon that will run an app inside itself.
-        It&apos;s a good place for you to showcase your work or help others with theirs.
-        Of course, you are free to put your standalone app on the App Store as well.</content>
+      <content>This app has a space for &quot;applets&quot;, basically an icon
+      that will run an app inside itself.  It&apos;s a good place for you to
+      showcase your work or help others with theirs.  Of course, you are free
+      to put your standalone app on the App Store as well.</content>
     </node>
   </subject>
 </root>

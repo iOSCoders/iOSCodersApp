@@ -114,9 +114,7 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
     NSString *s = [NSString stringWithFormat:@"var pt = 6 + ((16 / 7) * %.2f); document.styleSheets[0].cssRules[0].style.fontSize = pt.toFixed(2) + 'pt';", z];
     NSString *rc = [wv stringByEvaluatingJavaScriptFromString:s];
-#ifdef DEBUG
     NSLog(@"rc: %@", rc);
-#endif
 }
 
 -(void)initZoom {

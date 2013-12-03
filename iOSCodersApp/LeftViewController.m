@@ -96,7 +96,7 @@
 }
 
 - (NSString *)indexPathToString:(NSIndexPath *)indexPath {
-    return [NSString stringWithFormat:@"section: %d, row: %d", indexPath.section, indexPath.row];
+    return [NSString stringWithFormat:@"section: %ld, row: %ld", (long)indexPath.section, (long)indexPath.row];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
