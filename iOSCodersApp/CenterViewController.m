@@ -54,6 +54,8 @@
         Mazey2ViewController *vc = [[Mazey2ViewController alloc] init];
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
         [self presentViewController:navigationController animated:YES completion:^{}];
+    } else {
+        [[[UIAlertView alloc] initWithTitle:@"Not supported" message:[NSString stringWithFormat:@"%@ not supported yet", app] delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil] show];
     }
 }
 

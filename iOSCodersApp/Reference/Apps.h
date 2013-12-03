@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    Mazey2
+    Mazey2,
+    GameOfWar
 } App;
 
 @interface Apps : NSObject

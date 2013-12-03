@@ -13,7 +13,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _list = [NSArray arrayWithObjects:@"Mazey2", nil];
+        _list = [NSArray arrayWithObjects:@"Mazey2", @"GameOfWar", nil];
         _curApp = Mazey2;
     }
     return self;
