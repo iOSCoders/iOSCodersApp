@@ -137,8 +137,8 @@
 }
 
 - (NSURL *)webSiteURLFor:(NSString *)f {
-    // https://github.com/iOSCoders/iOSCodersApp/tree/master/iOSCodersApp/WebPages
-    NSURL *url = [[NSURL alloc] initWithScheme:@"https" host:@"raw.github.com" path:[@"/iOSCoders/iOSCodersApp/tree/master/iOSCodersApp/WebPages" stringByAppendingPathComponent:f]];
+    // https://raw.github.com/iOSCoders/iOSCodersApp/master/iOSCodersApp/WebPages/update.xml
+    NSURL *url = [[NSURL alloc] initWithScheme:@"https" host:@"raw.github.com" path:[@"/iOSCoders/iOSCodersApp/master/iOSCodersApp/WebPages" stringByAppendingPathComponent:f]];
     NSLog(@"URL: %@", [url absoluteString]);
     return url;
 }
