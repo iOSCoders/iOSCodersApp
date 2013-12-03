@@ -108,10 +108,11 @@
         } else if (indexPath.section == 1) {
             [self.cvc runApp:apps[indexPath.row]];
         } else if (indexPath.section == 2) {
-            [indexObj update];
-            [indexObj cacheIndex];
-            [tableView reloadData];
-            [self.cvc setPage:pages[0]];
+            [[[UIAlertView alloc] initWithTitle:@"" message:[NSString stringWithFormat:@"%@ not supported yet", @"Update is"] delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil] show];
+//            [indexObj update];
+//            [indexObj cacheIndex];
+//            [tableView reloadData];
+//            [self.cvc setPage:pages[0]];
         }
     }];
 }

@@ -3,10 +3,7 @@
 <root>
   <version>1</version>
   <title>Index</title>
-  <item>About</item>
-  <item>Logistics</item>
-  <item>Resources</item>
-  <item>Your App Here</item>
+  <item>About iOS Coders</item>
   <app>Mazey2</app>
   <app>GameOfWar</app>
 </root>

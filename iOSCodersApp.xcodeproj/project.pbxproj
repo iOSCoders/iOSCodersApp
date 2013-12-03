@@ -15,15 +15,11 @@
 		3BD2D104181F5014002DA976 /* MyScene4.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2D0EC181F5013002DA976 /* MyScene4.m */; };
 		3BD2D105181F5014002DA976 /* NSObject+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2D0EE181F5013002DA976 /* NSObject+Utils.m */; };
 		3BD2D106181F5014002DA976 /* Turtle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2D0F0181F5014002DA976 /* Turtle.m */; };
-		3BD2D109181F5014002DA976 /* About.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0F7181F5014002DA976 /* About.xml */; };
 		3BD2D10B181F5014002DA976 /* index.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0F9181F5014002DA976 /* index.xml */; };
 		3BD2D10C181F5014002DA976 /* index.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0FA181F5014002DA976 /* index.xsl */; };
-		3BD2D10E181F5014002DA976 /* Logistics.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0FC181F5014002DA976 /* Logistics.xml */; };
 		3BD2D10F181F5014002DA976 /* page.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0FD181F5014002DA976 /* page.xsl */; };
-		3BD2D110181F5014002DA976 /* Resources.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0FE181F5014002DA976 /* Resources.xml */; };
 		3BD2D111181F5014002DA976 /* update.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0FF181F5014002DA976 /* update.xml */; };
 		3BD2D112181F5014002DA976 /* xslstyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D100181F5014002DA976 /* xslstyle.css */; };
-		3BD2D113181F5014002DA976 /* Your App Here.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D101181F5014002DA976 /* Your App Here.xml */; };
 		3BD567C3184D6C9A000DD457 /* CardImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD567BB184D6C9A000DD457 /* CardImages.xcassets */; };
 		3BD567C4184D6C9A000DD457 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567BC184D6C9A000DD457 /* Button.m */; };
 		3BD567C5184D6C9A000DD457 /* CardClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567BD184D6C9A000DD457 /* CardClass.m */; };
@@ -33,6 +29,9 @@
 		3BD567C9184D6C9A000DD457 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567C1184D6C9A000DD457 /* Player.m */; };
 		3BD567CA184D6C9A000DD457 /* SuitClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567C2184D6C9A000DD457 /* SuitClass.m */; };
 		3BD567CD184D6DA2000DD457 /* GameOfWarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD567CC184D6DA2000DD457 /* GameOfWarViewController.m */; };
+		3BD567CF184D73AF000DD457 /* About iOS Coders.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BD567CE184D73AF000DD457 /* About iOS Coders.xml */; };
+		3BD567D0184D7796000DD457 /* fmt.js in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0F8181F5014002DA976 /* fmt.js */; };
+		3BD567D1184D77A7000DD457 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0FB181F5014002DA976 /* jquery.min.js */; };
 		3BF31A2817FE67D900603568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2717FE67D900603568 /* Foundation.framework */; };
 		3BF31A2A17FE67D900603568 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2917FE67D900603568 /* CoreGraphics.framework */; };
 		3BF31A2C17FE67D900603568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2B17FE67D900603568 /* UIKit.framework */; };
@@ -78,17 +77,13 @@
 		3BD2D0EE181F5013002DA976 /* NSObject+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utils.m"; sourceTree = "<group>"; };
 		3BD2D0EF181F5013002DA976 /* Turtle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Turtle.h; sourceTree = "<group>"; };
 		3BD2D0F0181F5014002DA976 /* Turtle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Turtle.m; sourceTree = "<group>"; };
-		3BD2D0F7181F5014002DA976 /* About.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = About.xml; sourceTree = "<group>"; };
 		3BD2D0F8181F5014002DA976 /* fmt.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = fmt.js; sourceTree = "<group>"; };
 		3BD2D0F9181F5014002DA976 /* index.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = index.xml; sourceTree = "<group>"; };
 		3BD2D0FA181F5014002DA976 /* index.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = index.xsl; sourceTree = "<group>"; };
 		3BD2D0FB181F5014002DA976 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
-		3BD2D0FC181F5014002DA976 /* Logistics.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Logistics.xml; sourceTree = "<group>"; };
 		3BD2D0FD181F5014002DA976 /* page.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = page.xsl; sourceTree = "<group>"; };
-		3BD2D0FE181F5014002DA976 /* Resources.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Resources.xml; sourceTree = "<group>"; };
 		3BD2D0FF181F5014002DA976 /* update.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = update.xml; sourceTree = "<group>"; };
 		3BD2D100181F5014002DA976 /* xslstyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = xslstyle.css; sourceTree = "<group>"; };
-		3BD2D101181F5014002DA976 /* Your App Here.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Your App Here.xml"; sourceTree = "<group>"; };
 		3BD567B4184D6C9A000DD457 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Button.h; path = GameOfWar/Button.h; sourceTree = "<group>"; };
 		3BD567B5184D6C9A000DD457 /* CardClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardClass.h; path = GameOfWar/CardClass.h; sourceTree = "<group>"; };
 		3BD567B6184D6C9A000DD457 /* CardsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardsClass.h; path = GameOfWar/CardsClass.h; sourceTree = "<group>"; };
@@ -106,6 +101,7 @@
 		3BD567C2184D6C9A000DD457 /* SuitClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuitClass.m; path = GameOfWar/SuitClass.m; sourceTree = "<group>"; };
 		3BD567CB184D6DA2000DD457 /* GameOfWarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOfWarViewController.h; path = GameOfWar/GameOfWarViewController.h; sourceTree = "<group>"; };
 		3BD567CC184D6DA2000DD457 /* GameOfWarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOfWarViewController.m; path = GameOfWar/GameOfWarViewController.m; sourceTree = "<group>"; };
+		3BD567CE184D73AF000DD457 /* About iOS Coders.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "About iOS Coders.xml"; sourceTree = "<group>"; };
 		3BF31A2417FE67D900603568 /* iOSCodersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCodersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF31A2717FE67D900603568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3BF31A2917FE67D900603568 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -207,17 +203,14 @@
 		3BD2D0F6181F5014002DA976 /* WebPages */ = {
 			isa = PBXGroup;
 			children = (
-				3BD2D0F7181F5014002DA976 /* About.xml */,
+				3BD567CE184D73AF000DD457 /* About iOS Coders.xml */,
 				3BD2D0F8181F5014002DA976 /* fmt.js */,
 				3BD2D0F9181F5014002DA976 /* index.xml */,
 				3BD2D0FA181F5014002DA976 /* index.xsl */,
 				3BD2D0FB181F5014002DA976 /* jquery.min.js */,
-				3BD2D0FC181F5014002DA976 /* Logistics.xml */,
 				3BD2D0FD181F5014002DA976 /* page.xsl */,
-				3BD2D0FE181F5014002DA976 /* Resources.xml */,
 				3BD2D0FF181F5014002DA976 /* update.xml */,
 				3BD2D100181F5014002DA976 /* xslstyle.css */,
-				3BD2D101181F5014002DA976 /* Your App Here.xml */,
 			);
 			path = WebPages;
 			sourceTree = "<group>";
@@ -386,21 +379,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BD2D10F181F5014002DA976 /* page.xsl in Resources */,
+				3BD567CF184D73AF000DD457 /* About iOS Coders.xml in Resources */,
+				3BD567D0184D7796000DD457 /* fmt.js in Resources */,
 				3BD2D10B181F5014002DA976 /* index.xml in Resources */,
+				3BD2D10C181F5014002DA976 /* index.xsl in Resources */,
+				3BD567D1184D77A7000DD457 /* jquery.min.js in Resources */,
+				3BD2D10F181F5014002DA976 /* page.xsl in Resources */,
+				3BD2D111181F5014002DA976 /* update.xml in Resources */,
+				3BD2D112181F5014002DA976 /* xslstyle.css in Resources */,
 				3BF31A3E17FE67D900603568 /* Main_iPad.storyboard in Resources */,
 				3BF31A4317FE67D900603568 /* Images.xcassets in Resources */,
-				3BD2D113181F5014002DA976 /* Your App Here.xml in Resources */,
-				3BD2D112181F5014002DA976 /* xslstyle.css in Resources */,
 				3BD2D102181F5014002DA976 /* car_top_copy.png in Resources */,
-				3BD2D109181F5014002DA976 /* About.xml in Resources */,
-				3BD2D10E181F5014002DA976 /* Logistics.xml in Resources */,
 				3BD567C3184D6C9A000DD457 /* CardImages.xcassets in Resources */,
 				3BF31A3B17FE67D900603568 /* Main_iPhone.storyboard in Resources */,
-				3BD2D111181F5014002DA976 /* update.xml in Resources */,
-				3BD2D10C181F5014002DA976 /* index.xsl in Resources */,
 				3BF31A3217FE67D900603568 /* InfoPlist.strings in Resources */,
-				3BD2D110181F5014002DA976 /* Resources.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,7 @@
-var collapsed = true;
+var collapsed = false;
+$('body').prepend('<hr>');
+$('body').prepend('<center name="y">Expand/Collapse</center>');
 $('body').append('<p/><hr>');
-$('body').append('<button name="y">*</div>');
 
 $('[name=z]').css('cursor', 'hand').click(function(){$('.heading').click()});
 $('[name=y]').css('cursor', 'hand').click(function(){collapseAll()});
@@ -12,7 +13,7 @@ $('.heading[collapsed="true"]').click();
 
 function collapseAll() {
     $('.heading').each(function(){
-        if (collapsed) {
+        if (!collapsed) {
             $(this).next('.sub-heading').hide();
             $(this).nextUntil('.heading,script').hide();
         } else {

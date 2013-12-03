@@ -23,6 +23,7 @@
     NSString *curElement;
     NSMutableArray *download;
     NSString *curVersion, *newVersion;
+    CGFloat zoom;
 }
 
 @end
@@ -34,6 +35,13 @@
     if (self) {
         // Custom initialization
         i = 0;
+        if ([[[[NSUserDefaults standardUserDefaults] dictionaryRepresentation] allKeys] containsObject:@"Zoom"]) {
+            zoom = [[NSUserDefaults standardUserDefaults] floatForKey:@"Zoom"];
+        } else {
+            zoom = (isPad ? 2.5 : 1);
+            [[NSUserDefaults standardUserDefaults] setFloat:zoom forKey:@"Zoom"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
         self.view.backgroundColor = [UIColor cyanColor];
         pages = ((AppDelegate *)[UIApplication sharedApplication].delegate).pages;
         webPages = ((AppDelegate *)[UIApplication sharedApplication].delegate).webPages;
@@ -60,7 +68,7 @@
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
         [self presentViewController:navigationController animated:YES completion:^{}];
     } else {
-        [[[UIAlertView alloc] initWithTitle:@"Not supported" message:[NSString stringWithFormat:@"%@ not supported yet", app] delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"" message:[NSString stringWithFormat:@"%@ not supported yet", app] delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil] show];
     }
 }
 
@@ -101,7 +109,10 @@
 }
 
 - (void)doZoom:(CGFloat)z {
-    NSString *s = [NSString stringWithFormat:@"var pt = 8 + ((16 / 7) * %.2f); document.styleSheets[0].cssRules[0].style.fontSize = pt.toFixed(2) + 'pt';", z];
+    zoom = z;
+    [[NSUserDefaults standardUserDefaults] setFloat:z forKey:@"Zoom"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSString *s = [NSString stringWithFormat:@"var pt = 6 + ((16 / 7) * %.2f); document.styleSheets[0].cssRules[0].style.fontSize = pt.toFixed(2) + 'pt';", z];
     NSString *rc = [wv stringByEvaluatingJavaScriptFromString:s];
 #ifdef DEBUG
     NSLog(@"rc: %@", rc);
@@ -109,7 +120,7 @@
 }
 
 -(void)initZoom {
-    [self doZoom:(isPad ? 2.5 : 1)];
+    [self doZoom:zoom];
 }
 
 - (void)loadPage:(NSString *)title {

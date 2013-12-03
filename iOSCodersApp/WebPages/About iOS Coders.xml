@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="page.xsl"?>
 <root>
-  <title>About</title>
+  <title>About iOS Coders</title>
   <subject name="Who We Are" collapsed="false">
     <node name="">
       <content>
@@ -43,6 +43,33 @@
           use much of the iOS framework as possible to make it the most
           comprehensive learning tool possible.</p>
       </content>
+    </node>
+  </subject>
+  <subject name="Meetings" collapsed="false">
+    <node name="">
+      <content>
+        We currently meeting the last Tuesday of every month at Starbucks in
+        Libertyville. Usually about 4-6 people attend. We have space for up to
+        8 attendees. Details are on the
+        <site/>
+        site.
+      </content>
+    </node>
+  </subject>
+  <subject name="Resources" collapsed="false">
+    <node name="">
+      <content>
+       Resources are currently on the
+        <site/>
+        site.
+      </content>
+    </node>
+  </subject>
+  <subject name="Embedded Apps" collapsed="false">
+    <node name="">
+      <content>This app has a space for &quot;applets&quot;, basically an icon that will run an app inside itself.
+        It&apos;s a good place for you to showcase your work or help others with theirs.
+        Of course, you are free to put your standalone app on the App Store as well.</content>
     </node>
   </subject>
 </root>
