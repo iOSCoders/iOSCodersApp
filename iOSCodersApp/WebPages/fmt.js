@@ -3,11 +3,11 @@ $('body').prepend('<hr>');
 $('body').prepend('<center name="y">Expand/Collapse</center>');
 $('body').append('<p/><hr>');
 
-$('[name=z]').css('cursor', 'hand').click(function(){$('.heading').click()});
-$('[name=y]').css('cursor', 'hand').click(function(){collapseAll()});
+$('[name=z]').css('cursor', 'pointer').click(function(){$('.heading').click()});
+$('[name=y]').css('cursor', 'pointer').click(function(){collapseAll()});
 
 $('.heading').next('.sub-heading').each(function(){
-        $(this).prev().css('cursor', 'hand').click(function(){
+        $(this).prev().css('cursor', 'pointer').click(function(){
             $(this).nextUntil('.heading,script').toggle()})});
 $('.heading[collapsed="true"]').click();
 

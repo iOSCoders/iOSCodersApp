@@ -34,11 +34,6 @@
             <xsl:apply-templates/>
           </xsl:for-each>
         </xsl:for-each>
-        <div>
-	      <xsl:element name="a">
-	        <xsl:attribute="href">update.xml</xsl:attribute>Update.xml
-	      </xsl:element>
-        </div>
         <script src="fmt.js"/>
       </body>
     </html>

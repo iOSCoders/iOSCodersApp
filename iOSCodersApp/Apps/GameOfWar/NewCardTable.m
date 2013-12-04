@@ -63,7 +63,7 @@ typedef enum {
 -(id)initWithSize:(CGSize)size {
 #ifdef DEBUG
     NSLog(@"%s", __func__);
-#endif
+#endifa
     if (self = [super initWithSize:size]) {
         ready = YES;
         self.gameState = NotStarted;

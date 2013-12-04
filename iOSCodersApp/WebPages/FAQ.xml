@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="page.xsl"?>
 <root>
-  <title>FAQ!!!</title>
+  <title>FAQ</title>
   <subject name="How do I use the debugger?" collapsed="false">
     <node name="">
       <content>
-        <p>Put a copy or reference to the email sent to Peter about this.</p>
+        <p>
+          Click
+          <a href="https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/DebugYourApp/DebugYourApp.html">here</a> to access the Apple documentation for the Xcode debugger.
+          Running your project using Command+R starts the simulator or runs the app on your iOS device. The build configuration must be set to Debug. Use the Command+&lt; keys to bring up the options screen, click on the Run target, then select Info. The dropdown for Build Configuration should be set to Debug. Click next to the line of code to set a breakpoint. You will see a blue arrow. After running the program, when the breakpoint is reached the debugger console will be shown. (Use Shift+Command+C to display it or Shift+Command+Y to hide it). The Debug Navigator will displayed showing the call stack. The Debugger console will show the variables on the left and a command prompt on the right.
+        </p>
+        <p>
+        The most handy thing to do in the debugger is inspecting variables. This is easily accomplished by using the "expr" command. For instance, to see the value of variable i, just enter "expr i". You can also change variables, for instance "expr i++" will increment i. Most variables are actually pointers in Objective-C, therefore you must use * to see the contents of the object. For example:
+        <pre>
+(lldb) expr *c
+(CardClass) $4 = {
+    NSObject = {
+        isa = CardClass
+    }
+    _suit = Diamonds
+    _faceUpDown = FACE_DOWN
+    _value = 1
+}
+        </pre>
+        </p>
+        <p>
+        You can also follow a bunch of pointers using "expr -P 10 -- c" for instance.
+        </p>
+        <p>
+        Often times, logging messages as the app runs is the best way to debug. Use the following code to print functions as they are executed works well, and it is disabled when the build scheme is changed to "Released".
+        <pre>
+-(id)yourmethod {
+    #ifdef DEBUG
+    NSLog(@"%s", __func__);
+    #endif
+}
+        </pre>
+        </p>
+        <p>
+        The official documentation for the debugger is at <a href="http://lldb.llvm.org/tutorial.html">lldb.llvm.org</a>.
+        </p>
+        <p>
+        One of the most useful breakpoints to set is "Debug/Breakpoints/Create Exception Breakpoint...", this will help you find problems like trying to put "nil" into an NSArray or sending the wrong message to a class.
+        </p>
+        <p>
+        Assert is your friend, use this function call to force an exception so you can examine the call stack if something goes awry. It's best to avoid using asserts in production code, therefore this construct is best:
+        <pre>
+#ifdef DEBUG
+    NSLog(@"%s", __func__);
+    assert(self.gameState == NotStarted);
+#endif
+        </pre>
+        </p>
       </content>
     </node>
   </subject>
@@ -26,21 +72,25 @@
   <subject name="How do I find other iOS coders near me?" collapsed="false">
     <node name="">
       <content>
-        <p>Use the <site/> site!</p>
+        <p>
+          Use the
+          <site/>
+          site!
+        </p>
       </content>
     </node>
   </subject>
   <subject name="How do I create a drawer?" collapsed="false">
     <node name="">
       <content>
-        <p>Create a presentation for this. </p>
+        <p>Create a presentation for this.</p>
       </content>
     </node>
   </subject>
   <subject name="How do I use other peoples code?" collapsed="false">
     <node name="">
       <content>
-        <p>Create a presentation for this. Discuss Pods and GitHub. </p>
+        <p>Create a presentation for this. Discuss Pods and GitHub.</p>
       </content>
     </node>
   </subject>
@@ -69,13 +119,6 @@
     <node name="">
       <content>
         <p>Make them free.</p>
-      </content>
-    </node>
-  </subject>
-  <subject name=" xxx " collapsed="false">
-    <node name="">
-      <content>
-        <p> xxx </p>
       </content>
     </node>
   </subject>
