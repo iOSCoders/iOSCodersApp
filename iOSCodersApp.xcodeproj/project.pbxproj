@@ -33,6 +33,7 @@
 		3BD567CF184D73AF000DD457 /* About iOS Coders.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BD567CE184D73AF000DD457 /* About iOS Coders.xml */; };
 		3BD567D0184D7796000DD457 /* fmt.js in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0F8181F5014002DA976 /* fmt.js */; };
 		3BD567D1184D77A7000DD457 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2D0FB181F5014002DA976 /* jquery.min.js */; };
+		3BDD117B187071F60060748F /* New Item.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BDD117A187071F60060748F /* New Item.xml */; };
 		3BF31A2817FE67D900603568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2717FE67D900603568 /* Foundation.framework */; };
 		3BF31A2A17FE67D900603568 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2917FE67D900603568 /* CoreGraphics.framework */; };
 		3BF31A2C17FE67D900603568 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF31A2B17FE67D900603568 /* UIKit.framework */; };
@@ -104,6 +105,7 @@
 		3BD567CB184D6DA2000DD457 /* GameOfWarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOfWarViewController.h; path = GameOfWar/GameOfWarViewController.h; sourceTree = "<group>"; };
 		3BD567CC184D6DA2000DD457 /* GameOfWarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOfWarViewController.m; path = GameOfWar/GameOfWarViewController.m; sourceTree = "<group>"; };
 		3BD567CE184D73AF000DD457 /* About iOS Coders.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "About iOS Coders.xml"; sourceTree = "<group>"; };
+		3BDD117A187071F60060748F /* New Item.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "New Item.xml"; sourceTree = "<group>"; };
 		3BF31A2417FE67D900603568 /* iOSCodersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCodersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF31A2717FE67D900603568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3BF31A2917FE67D900603568 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				3B73A0C2184DD32F00EB83DD /* FAQ.xml */,
+				3BDD117A187071F60060748F /* New Item.xml */,
 				3BD567CE184D73AF000DD457 /* About iOS Coders.xml */,
 				3BD2D0F8181F5014002DA976 /* fmt.js */,
 				3BD2D0F9181F5014002DA976 /* index.xml */,
@@ -386,6 +389,7 @@
 				3BD567CF184D73AF000DD457 /* About iOS Coders.xml in Resources */,
 				3BD567D0184D7796000DD457 /* fmt.js in Resources */,
 				3BD2D10B181F5014002DA976 /* index.xml in Resources */,
+				3BDD117B187071F60060748F /* New Item.xml in Resources */,
 				3BD2D10C181F5014002DA976 /* index.xsl in Resources */,
 				3BD567D1184D77A7000DD457 /* jquery.min.js in Resources */,
 				3BD2D10F181F5014002DA976 /* page.xsl in Resources */,

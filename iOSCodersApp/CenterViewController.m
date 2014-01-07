@@ -122,8 +122,12 @@
 }
 
 - (void)loadPage:(NSString *)title {
-    self.navigationItem.title = title;
-    NSURL *url = [NSURL fileURLWithPath:[[webPages stringByAppendingPathComponent:title] stringByAppendingPathExtension:@"xml"]];
+    NSString *f = title;
+    if (title.pathExtension.length == 0) {
+        f = [title stringByAppendingPathExtension:@"xml"];
+    }
+    self.navigationItem.title = f.stringByDeletingPathExtension;
+    NSURL *url = [NSURL fileURLWithPath:[webPages stringByAppendingPathComponent:f]];
     [wv loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
@@ -138,7 +142,7 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
 #ifdef DEBUG
-    NSLog(@"%s", __func__);
+    NSLog(@"%s, %@, %@", __func__, webView, error);
 #endif
 }
 
@@ -148,10 +152,26 @@
 #endif
 }
 
+- (NSString *)tString:(UIWebViewNavigationType)t {
+    switch (t) {
+        case UIWebViewNavigationTypeLinkClicked: return @"UIWebViewNavigationTypeLinkClicked";
+        case UIWebViewNavigationTypeFormSubmitted: return @"UIWebViewNavigationTypeFormSubmitted";
+        case UIWebViewNavigationTypeBackForward: return @"UIWebViewNavigationTypeBackForward";
+        case UIWebViewNavigationTypeReload: return @"UIWebViewNavigationTypeReload";
+        case UIWebViewNavigationTypeFormResubmitted: return @"UIWebViewNavigationTypeFormResubmitted";
+        case UIWebViewNavigationTypeOther: return @"UIWebViewNavigationTypeOther";
+    }
+}
+
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
 #ifdef DEBUG
     NSLog(@"%s", __func__);
+    NSLog(@"%@, %@", [self tString:navigationType], request);
 #endif
+    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
+        [[UIApplication sharedApplication] openURL:request.URL];
+        return NO;
+    }
     return YES;
 }
 

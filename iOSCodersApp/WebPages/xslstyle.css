@@ -28,3 +28,11 @@ body {
 .content {
     margin-left: 1em;
 }
+
+.code {
+    font-family: monospace;
+}
+
+.code2 {
+    left-margin: 2em;
+}

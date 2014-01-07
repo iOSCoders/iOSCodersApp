@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <?xml-stylesheet type="text/xsl" href="index.xsl"?>
 <root>
-    <newversion>20131203</newversion>
+    <newversion>20131229</newversion>
     <download>index.xml</download>
     <download>FAQ.xml</download>
+    <download>New Item.xml</download>
 </root>
